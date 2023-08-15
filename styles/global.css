@@ -1,0 +1,43 @@
+/* Importando a fonte Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Configurações gerais */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+  :root {
+    /* fonts */
+    --font-inter: Inter;
+  
+    /* font sizes */
+    --font-size-mini: 15px;
+    --font-size-3xs: 10px;
+    --font-size-5xs: 8px;
+    --font-size-xl: 20px;
+    --font-size-xs: 12px;
+
+    /* Colors */
+    --light : #f6f6f9;
+    --primary: #1976D2;
+    --light-primary: #CFE8FF;
+    --greey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+    --danger: #d32f2f;
+    --light-danger: #fecdd3;
+    --warning: #fbc02d;
+    --light-warning: #fff2c6;
+    --success: #388e3c;
+    --light-sucess: #BBF7D0;
+    
+    /* border radiuses */
+    --br-8xs: 5px;
+    --br-3xs: 10px;
+    --br-xl: 20px;
+  }
+  
