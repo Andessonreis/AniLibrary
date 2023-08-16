@@ -43,7 +43,7 @@ nav .nav-items {
 }
 
 nav .nav-items li {
-    margin: 0 15px; /* Adiciona um espaçamento entre os itens do menu */
+    margin: 0 15px;
 }
 
 nav .nav-items li a {
@@ -53,14 +53,13 @@ nav .nav-items li a {
     text-decoration: none;
 }
 
-/* Estilos para tornar a navbar responsiva */
 @media (max-width: 768px) {
     nav .menu-icon {
-        display: block; /* Mostrar ícone de menu */
+        display: block; 
     }
 
     nav .nav-items {
-        display: none; /* Ocultar itens do menu principal */
+        display: none;
         position: absolute;
         top: 70px;
         left: 0;
@@ -72,10 +71,10 @@ nav .nav-items li a {
     }
 
     nav .nav-items.active {
-        display: flex; /* Mostrar itens do menu ao clicar no ícone de menu */
+        display: flex;
     }
 
     nav .cancel-icon {
-        display: block; /* Mostrar ícone de cancelar */
+        display: block; 
     }
 }
