@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Configurações do projeto -->
-
+<!-- Configurações do projeto head -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/global.css"> 
-    <link rel="stylesheet" href="styles/styles.css"> 
+    <link rel="stylesheet" href="styles/global.css"> <!-- Adicione um arquivo globalCSS para estilização -->
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Adicione um arquivo CSS para estilização -->
     <title>ANILIBRARY</title>
 </head>
-<!-- EndConfig -->
+<!-- End of config -->
 
-<!-- Iniciando o corpo do projeto -->
-
+<!-- inicio do corpo do projeto -->
 <body>
-    <!--Navbar-->
+    <!-- Navbar -->
+    <nav>
+        <div class="menu-icon">
+            <span class="bi bi-list"></span>
+        </div>
 
-    <!-- Bootstrap Icons -->
-    <div class="menu-icon">
-        <span class="bi bi-list"></span>
-    </div>
+        <div class="logo">ANILIBRARY</div>
 
-    <div class="logo">ANILIBRARY</div>
+        <ul class="nav-items">
+            <li><a href="#">Animes</a></li>
+            <li><a href="#">Mangás</a></li>
+            <li><a href="#">Estúdios</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
 
-    <div class="nav-items">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </div>
+        <div class="cancel-icon">
+            <span class="bi bi-x"></span>
+        </div>
 
-    <div class="search-icons">
-        <span class="bi bi-search"></span>
-    </div>
-    
-
-    <div class="cancel-icon">
-        <span class="bi bi-x-circle"></span>
-    </div>
-
-    <form action="#">
-        <input type="search" class="search-data" placeholder="Search" required>
-        <button type="submit" class="bi bi-search"></button>
-    </form> 
-    
-    <!--End of navbar-->
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="bi bi-search"></button>
+        </form>
+    </nav>
+    <!-- End of navbar -->
 
     <div class="container">
         <h2 class="subtitle">Explore uma variedade incrível de animes em nosso catálogo interativo.</h2>
         <p class="description">Aqui, você encontrará informações detalhadas sobre seus animes favoritos.</p>
-        <!---<img src="images/hellparadise.jpe" alt="Imagem do catálogo de animes"> -->
     </div>
 
 </body>
-
-<!-- EndBody -->
+ <!--End of body-->
 
 </html>
