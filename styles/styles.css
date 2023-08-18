@@ -32,6 +32,7 @@ nav .nav-items {
     flex: 1;
     list-style: none; 
     padding: 0;
+    overflow-y: auto;
 }
 
 nav .nav-items li {
@@ -100,7 +101,9 @@ nav .search-icon {
    color: #fff;
    cursor: pointer;
    display: none;
+  
 }
+
 
 nav .menu-icon span,
 nav .cancel-icon,
@@ -108,8 +111,14 @@ nav .search-icon {
     display: none;
 }
 
+nav .search-icon:hover{
+    overflow: scroll;
+}
+
 /* Deixando mais responsivo */
-@media (max-width: 1245px) {
+@media (max-width: 1245px) {}
+
+@media (max-width: 900px) {
     nav {
         padding: 0 50px;
     }
@@ -190,11 +199,6 @@ nav .search-icon {
     }
 
     nav .menu-icon {
-        display: block;
-    }
-
-    nav .search-icon,
-    nav .menu-icon span {
         display: block;
     }
 
