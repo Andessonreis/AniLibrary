@@ -32,6 +32,7 @@ nav .nav-items {
     flex: 1;
     list-style: none; 
     padding: 0;
+    overflow-y: auto;
 }
 
 nav .nav-items li {
@@ -90,6 +91,7 @@ nav form button:hover{
     background: #2b9638;
 }
 
+/* Ícones da barra de navegação */
 nav .menu-icon,
 nav .cancel-icon,
 nav .search-icon {
@@ -100,6 +102,7 @@ nav .search-icon {
    color: #fff;
    cursor: pointer;
    display: none;
+  
 }
 
 nav .menu-icon span,
@@ -108,8 +111,25 @@ nav .search-icon {
     display: none;
 }
 
-/* Deixando mais responsivo */
-@media (max-width: 1245px) {
+nav .search-icon:hover{
+    overflow: scroll;
+}
+
+/* Responsividade */
+
+@media (max-width: 980px) {
+    nav .menu-icon,
+    nav .cancel-icon,
+    nav .search-icon {
+        margin: 0 20px;
+    }        
+
+    nav form {
+        right: 30px;
+    }
+}
+
+@media (max-width: 900px) {
     nav {
         padding: 0 50px;
     }
@@ -121,7 +141,7 @@ nav .search-icon {
     }
 
     nav .nav-items {
-        position: fixed;
+        position: absolute;
         z-index: 99;
         top: 70px;
         width: 100%;
@@ -149,7 +169,7 @@ nav .search-icon {
 
     nav form {
         position: absolute;
-        top: 50px;
+        top: 10px;
         right: 50px;
         opacity: 0;
         pointer-events: none;
@@ -157,7 +177,7 @@ nav .search-icon {
     }
 
     nav form.active {
-        top: 95px;
+        top: 15px;
         opacity: 1;
         pointer-events: auto;
     }
@@ -193,40 +213,19 @@ nav .search-icon {
         display: block;
     }
 
-    nav .search-icon,
-    nav .menu-icon span {
-        display: block;
-    }
-
     nav .menu-icon span.hide,
     nav .search-icon.hide {
         display: none;
     }
-    
+
     nav .cancel-icon.show {
         display: block;
         color: #26d63b;
+        transform: translate(-50%, -50%);
     }
+    
 }
 
-@media (max-width: 980px) {
-    nav .menu-icon,
-    nav .cancel-icon,
-    nav .search-icon {
-        margin: 0 20px;
-    }        
 
-    nav form {
-        right: 30px;
-    }
-}
 
-@media (max-width: 350px) {
-    nav .menu-icon,
-    nav .cancel-icon,
-    nav .search-icon {
-        margin: 0 10px;
-        font-size: 16px;
-    }
-}
 /* End */
