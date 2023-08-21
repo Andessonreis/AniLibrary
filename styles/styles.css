@@ -424,3 +424,22 @@ nav .logo.space {
     margin: 0 auto;
 }
 /* end of bunner */
+
+/* Introdução */
+.intro {
+    padding: 40px;
+    background-color: #f7f7f8;
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intro-description {
+    font-size: 18px;
+    color: #444;
+}
+/*End of introdução*/
