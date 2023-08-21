@@ -1,7 +1,7 @@
 /* Estilo para o corpo da página */
 
 body {
-    background: #f2f2f2;
+    background: #f7f7f8;
     background-size: cover;
     background-position: center;
     min-height: 450px;
@@ -10,6 +10,7 @@ body {
 }
 
 /* Estilo para a barra de navegação (navbar) */
+
 nav {
     background: #171c24;
     display: flex;
@@ -17,7 +18,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 70px;
-    padding: 0;
+    padding: 0 100px;
 }
 
 nav .logo {
@@ -30,8 +31,9 @@ nav .logo {
 nav .nav-items {
     display: flex;
     flex: 1;
-    list-style: none; 
+    list-style: none;
     padding: 0;
+    overflow-y: auto;
 }
 
 nav .nav-items li {
@@ -56,7 +58,7 @@ nav form {
     height: 40px;
     padding: 2px;
     background: #1e232b;
-    min-width: 18%!important;
+    min-width: 18% !important;
     border-radius: 2px;
     border: 1px solid rgba(155, 155, 155, 0.2);
     border-radius: 36px;
@@ -71,7 +73,6 @@ nav form .search-data {
     border: none;
     font-weight: 500;
     background: none;
-
 }
 
 nav form button {
@@ -86,20 +87,21 @@ nav form button {
     transition: .2s all;
 }
 
-nav form button:hover{
+nav form button:hover {
     background: #2b9638;
 }
 
+/* Ícones da barra de navegação */
 nav .menu-icon,
 nav .cancel-icon,
 nav .search-icon {
-   width: 40px;
-   text-align: center;
-   margin: 0 50px;
-   font-size: 18px;
-   color: #fff;
-   cursor: pointer;
-   display: none;
+    width: 40px;
+    text-align: center;
+    margin: 0 50px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
 }
 
 nav .menu-icon span,
@@ -108,16 +110,31 @@ nav .search-icon {
     display: none;
 }
 
-/* Deixando mais responsivo */
+nav .search-icon:hover {
+    overflow: scroll;
+}
+
+
+/* Responsividade */
+
 @media (max-width: 1245px) {
     nav {
         padding: 0 50px;
     }
 
+    nav .nav-items li a:hover {
+        color: #26d63b;
+    }
+}
+
+@media (max-width: 1140px) {
+    nav {
+        padding: 0px;
+    }
+
     nav .logo {
         flex: 2;
         text-align: center;
-        font-size: 22px;
     }
 
     nav .nav-items {
@@ -131,25 +148,29 @@ nav .search-icon {
         text-align: center;
         background: #14181f;
         display: inline-block;
-        transition: left 0.3s ease;     
-
+        transition: left 0.3s ease;
     }
-    
+
     nav .nav-items.active {
         left: 0px;
     }
-    
+
     nav .nav-items li {
         line-height: 40px;
+        margin: 30px 0;
     }
 
     nav .nav-items li a {
         font-size: 20px;
     }
 
+    nav .nav-items li a:hover {
+        color: #26d63b;
+    }
+
     nav form {
         position: absolute;
-        top: 50px;
+        top: 80px;
         right: 50px;
         opacity: 0;
         pointer-events: none;
@@ -158,6 +179,152 @@ nav .search-icon {
 
     nav form.active {
         top: 95px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    nav form:before {
+        position: absolute;
+        content: "";
+        top: -13px;
+        right: 0px;
+        width: 0;
+        height: 0;
+        z-index: -1;
+        border: 10px solid transparent;
+        border-bottom-color: #1e232b;
+        margin: -20px 0 0;
+    }
+
+    nav form:after {
+        position: absolute;
+        content: '';
+        height: 60px;
+        padding: 2px;
+        background: #1e232b;
+        border-radius: 2px;
+        min-width: calc(100% + 20px);
+        z-index: -2;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav .search-icon,
+    nav .menu-icon span {
+        display: block;
+    }
+
+    nav .menu-icon span.hide,
+    nav .search-icon.hide {
+        display: none;
+    }
+
+    nav .cancel-icon.show {
+        display: block;
+    }
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.content header {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.content .text {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.space {
+    margin: 10px 0;
+}
+
+nav .logo.space {
+    color: red;
+    padding: 0 5px 0 0;
+}
+
+@media (max-width: 980px) {
+
+    nav .menu-icon,
+    nav .cancel-icon,
+    nav .search-icon {
+        margin: 0 20px;
+    }
+
+    nav form {
+        right: 30px;
+    }
+
+    nav .nav-items li a:hover {
+        color: #26d63b;
+    }
+}
+
+@media (max-width: 900px) {
+    nav {
+        padding: 0 50px;
+    }
+
+    nav .logo {
+        flex: 2;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    nav .nav-items {
+        position: absolute;
+        z-index: 99;
+        top: 70px;
+        width: 100%;
+        left: -100%;
+        height: 100%;
+        padding: 10px 50px 0 50px;
+        text-align: center;
+        background: #14181f;
+        display: inline-block;
+        transition: left 0.3s ease;
+    }
+
+    nav .nav-items.active {
+        left: 0px;
+    }
+
+    nav .nav-items li {
+        line-height: 40px;
+    }
+
+    nav .nav-items li a {
+        font-size: 20px;
+    }
+
+    nav .nav-items li a:hover {
+        color: #26d63b;
+    }
+
+    nav form {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        opacity: 0;
+        pointer-events: none;
+        transition: top 0.3s ease, opacity 0.1s ease;
+    }
+
+    nav form.active {
+        top: 15px;
         opacity: 1;
         pointer-events: auto;
     }
@@ -193,40 +360,123 @@ nav .search-icon {
         display: block;
     }
 
-    nav .search-icon,
-    nav .menu-icon span {
-        display: block;
-    }
-
     nav .menu-icon span.hide,
     nav .search-icon.hide {
         display: none;
     }
-    
+
     nav .cancel-icon.show {
         display: block;
         color: #26d63b;
-    }
-}
-
-@media (max-width: 980px) {
-    nav .menu-icon,
-    nav .cancel-icon,
-    nav .search-icon {
-        margin: 0 20px;
-    }        
-
-    nav form {
-        right: 30px;
+        transform: translate(-50%, -50%);
     }
 }
 
 @media (max-width: 350px) {
+
     nav .menu-icon,
     nav .cancel-icon,
     nav .search-icon {
         margin: 0 10px;
         font-size: 16px;
     }
+
+    nav .nav-items li a:hover {
+        color: #26d63b;
+    }
 }
-/* End */
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content header {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.content .text {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.content .space {
+    margin: 10px 0;
+}
+/* End of responsividade*/
+
+/* Bunner */
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Isso garante que a imagem não transborde */
+    height: auto;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* end of bunner */
+
+/* Introdução */
+.intro {
+    padding: 40px;
+    background-color: #f7f7f8;
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intro-description {
+    font-size: 18px;
+    color: #444;
+}
+/*End of introdução*/
+
+/* Catálogo de animes */
+.anime-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.anime-item {
+    background-color: #f7f7f8;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.anime-item:hover {
+    background-color: #e0e0e0;
+}
+
+.anime-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.anime-item h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.anime-item p {
+    font-size: 14px;
+    color: #888;
+}
+
