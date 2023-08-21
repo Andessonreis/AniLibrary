@@ -1,16 +1,14 @@
 /* Estilo para o corpo da página */
 
 body {
-    background: #f2f2f2;
+    background: #f7f7f8;
     background-size: cover;
     background-position: center;
     min-height: 450px;
     height: 100vh;
-    background-image: url("images/narutoAnilibrary.jpeg");
     margin: 0;
 }
 
-    
 /* Estilo para a barra de navegação (navbar) */
 
 nav {
@@ -75,7 +73,6 @@ nav form .search-data {
     border: none;
     font-weight: 500;
     background: none;
-
 }
 
 nav form button {
@@ -95,7 +92,6 @@ nav form button:hover {
 }
 
 /* Ícones da barra de navegação */
-
 nav .menu-icon,
 nav .cancel-icon,
 nav .search-icon {
@@ -106,7 +102,6 @@ nav .search-icon {
     color: #fff;
     cursor: pointer;
     display: none;
-
 }
 
 nav .menu-icon span,
@@ -232,7 +227,6 @@ nav .search-icon:hover {
     nav .cancel-icon.show {
         display: block;
     }
-
 }
 
 .content {
@@ -302,7 +296,6 @@ nav .logo.space {
         background: #14181f;
         display: inline-block;
         transition: left 0.3s ease;
-
     }
 
     nav .nav-items.active {
@@ -377,7 +370,6 @@ nav .logo.space {
         color: #26d63b;
         transform: translate(-50%, -50%);
     }
-
 }
 
 @media (max-width: 350px) {
@@ -414,5 +406,4 @@ nav .logo.space {
 .content .space {
     margin: 10px 0;
 }
-
 /* End of responsividade*/
