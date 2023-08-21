@@ -443,3 +443,40 @@ nav .logo.space {
     color: #444;
 }
 /*End of introdução*/
+
+/* Catálogo de animes */
+.anime-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.anime-item {
+    background-color: #f7f7f8;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.anime-item:hover {
+    background-color: #e0e0e0;
+}
+
+.anime-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.anime-item h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.anime-item p {
+    font-size: 14px;
+    color: #888;
+}
+
