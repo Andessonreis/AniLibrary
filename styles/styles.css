@@ -407,3 +407,20 @@ nav .logo.space {
     margin: 10px 0;
 }
 /* End of responsividade*/
+
+/* Bunner */
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Isso garante que a imagem não transborde */
+    height: auto;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* end of bunner */
