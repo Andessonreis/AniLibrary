@@ -6,10 +6,11 @@ body {
     background-position: center;
     min-height: 450px;
     height: 100vh;
+    background-image: url("images/narutoAnilibrary.jpeg");
     margin: 0;
 }
 
-
+    
 /* Estilo para a barra de navegação (navbar) */
 
 nav {
@@ -376,7 +377,7 @@ nav .logo.space {
         color: #26d63b;
         transform: translate(-50%, -50%);
     }
-  
+
 }
 
 @media (max-width: 350px) {
@@ -414,4 +415,4 @@ nav .logo.space {
     margin: 10px 0;
 }
 
-/* End */
+/* End of responsividade*/
