@@ -48,9 +48,9 @@ class Anime {
     generateHTML() {
         return `
             <div class="anime-item">
+            <img src="images/hellparadise.jpe" alt="Anime Image">
                 <h3>${this.title}</h3>
                 <p>Gênero: ${this.genre}</p>
-                <img src="images/hellparadise.jpe" alt="Anime Image">
             </div>
         `;
     }
