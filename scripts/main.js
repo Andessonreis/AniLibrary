@@ -37,3 +37,38 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Catálogo de animes
+class Anime {
+    constructor(title, genre) {
+        this.title = title;
+        this.genre = genre;
+    }
+
+    generateHTML() {
+        return `
+            <div class="anime-item">
+            <img src="images/Hell's_Paradise-_Jigokuraku,_Vol._5_by_Yuji_Kaku.jpg" alt="Anime Image">
+                <h3>${this.title}</h3>
+                <p>Gênero: ${this.genre}</p>
+            </div>
+        `;
+    }
+}
+
+const animeCatalog = [
+    new Anime("Hell's Paradise", "Ação, Sobrenatural, Seinen")
+];
+
+const animeList = document.querySelector('.anime-list');
+function displayAnimeCatalog() {
+    let catalogHTML = '';
+    for (const anime of animeCatalog) {
+        for (let i = 0; i < 7; i++) {
+            catalogHTML += anime.generateHTML();
+        }
+    }
+    animeList.innerHTML = catalogHTML;
+}
+
+displayAnimeCatalog();

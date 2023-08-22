@@ -1,7 +1,7 @@
 /* Estilo para o corpo da página */
 
 body {
-    background: #f7f7f8;
+    background: var(--background-light);
     background-size: cover;
     background-position: center;
     min-height: 450px;
@@ -12,7 +12,7 @@ body {
 /* Estilo para a barra de navegação (navbar) */
 
 nav {
-    background: #171c24;
+    background: var(--dark);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -22,7 +22,7 @@ nav {
 }
 
 nav .logo {
-    color: #fff;
+    color: var(--primary-neon-blue);
     font-size: 30px;
     font-weight: 600;
     letter-spacing: -1px;
@@ -42,14 +42,14 @@ nav .nav-items li {
 }
 
 nav .nav-items li a {
-    color: #fff;
+    color: var(--text-light);
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
 }
 
 nav .nav-items li a:hover {
-    color: #26d63b;
+    color: var(--primary-neon-blue);
 }
 
 
@@ -57,7 +57,7 @@ nav form {
     display: flex;
     height: 40px;
     padding: 2px;
-    background: #1e232b;
+    background: var(--dark);
     min-width: 18% !important;
     border-radius: 2px;
     border: 1px solid rgba(155, 155, 155, 0.2);
@@ -68,7 +68,7 @@ nav form .search-data {
     width: 100%;
     height: 100%;
     padding: 0 10px;
-    color: #fff;
+    color: var(--text-light);
     font-size: 17px;
     border: none;
     font-weight: 500;
@@ -77,8 +77,8 @@ nav form .search-data {
 
 nav form button {
     padding: 0 15px;
-    color: #fff;
-    background: #26d63b;
+    color: var(--text-light);
+    background: var(--primary-neon-blue);
     border: none;
     border-radius: 2px;
     border-top-right-radius: 12px;
@@ -88,7 +88,7 @@ nav form button {
 }
 
 nav form button:hover {
-    background: #2b9638;
+    background: var(--primary-neon-blue);
 }
 
 /* Ícones da barra de navegação */
@@ -99,7 +99,7 @@ nav .search-icon {
     text-align: center;
     margin: 0 50px;
     font-size: 18px;
-    color: #fff;
+    color: var(--text-light);
     cursor: pointer;
     display: none;
 }
@@ -123,7 +123,7 @@ nav .search-icon:hover {
     }
 
     nav .nav-items li a:hover {
-        color: #26d63b;
+        color:  var(--primary-neon-blue);
     }
 }
 
@@ -165,7 +165,7 @@ nav .search-icon:hover {
     }
 
     nav .nav-items li a:hover {
-        color: #26d63b;
+        color: var(--primary-neon-blue);
     }
 
     nav form {
@@ -252,7 +252,7 @@ nav .search-icon:hover {
 }
 
 nav .logo.space {
-    color: red;
+    color: var(--danger);
     padding: 0 5px 0 0;
 }
 
@@ -269,7 +269,7 @@ nav .logo.space {
     }
 
     nav .nav-items li a:hover {
-        color: #26d63b;
+        color: var(--primary-neon-blue);
     }
 }
 
@@ -311,7 +311,7 @@ nav .logo.space {
     }
 
     nav .nav-items li a:hover {
-        color: #26d63b;
+        color: var(--primary-neon-blue);
     }
 
     nav form {
@@ -367,7 +367,7 @@ nav .logo.space {
 
     nav .cancel-icon.show {
         display: block;
-        color: #26d63b;
+        color: var(--primary-neon-blue);
         transform: translate(-50%, -50%);
     }
 }
@@ -382,7 +382,7 @@ nav .logo.space {
     }
 
     nav .nav-items li a:hover {
-        color: #26d63b;
+        color: var(--primary-neon-blue);
     }
 }
 
@@ -406,6 +406,7 @@ nav .logo.space {
 .content .space {
     margin: 10px 0;
 }
+
 /* End of responsividade*/
 
 /* Bunner */
@@ -413,8 +414,20 @@ nav .logo.space {
 .banner {
     width: 100%;
     max-width: 100%;
-    overflow: hidden; /* Isso garante que a imagem não transborde */
+    overflow: hidden;
     height: auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 2px;
+    width: 100%;
+    height: 8px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6);
 }
 
 .banner img {
@@ -423,12 +436,12 @@ nav .logo.space {
     display: block;
     margin: 0 auto;
 }
+
 /* end of bunner */
 
 /* Introdução */
 .intro {
     padding: 40px;
-    background-color: #f7f7f8;
     text-align: center;
 }
 
@@ -436,15 +449,23 @@ nav .logo.space {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: var(--primary-neon-blue);
 }
 
 .intro-description {
     font-size: 18px;
     color: #444;
 }
+
 /*End of introdução*/
 
 /* Catálogo de animes */
+
+.anime-catalog {
+    background-color: var(--black);
+    color: var(--primary-neon-blue);
+  }
+
 .anime-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -457,6 +478,9 @@ nav .logo.space {
     padding: 10px;
     text-align: center;
     transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.6);
+
 }
 
 .anime-item:hover {
@@ -465,7 +489,7 @@ nav .logo.space {
 
 .anime-item img {
     width: 100%;
-    height: auto;
+    height: 85%;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -479,4 +503,3 @@ nav .logo.space {
     font-size: 14px;
     color: #888;
 }
-
