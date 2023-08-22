@@ -413,8 +413,9 @@ nav .logo.space {
 .banner {
     width: 100%;
     max-width: 100%;
-    overflow: hidden; /* Isso garante que a imagem não transborde */
+    overflow: hidden;
     height: auto;
+    cursor: pointer;
 }
 
 .banner img {
@@ -457,6 +458,7 @@ nav .logo.space {
     padding: 10px;
     text-align: center;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .anime-item:hover {
