@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Catalago de animes
+// Catálogo de animes
 class Anime {
     constructor(title, genre) {
         this.title = title;
@@ -50,25 +50,25 @@ class Anime {
             <div class="anime-item">
                 <h3>${this.title}</h3>
                 <p>Gênero: ${this.genre}</p>
+                <img src="images/hellparadise.jpe" alt="Anime Image">
             </div>
         `;
     }
 }
 
 const animeCatalog = [
-    new Anime("Hell's Paradise", "Ação, Sobrenatural, Seinen");
+    new Anime("Hell's Paradise", "Ação, Sobrenatural, Seinen")
 ];
 
 const animeList = document.querySelector('.anime-list');
-
 function displayAnimeCatalog() {
     let catalogHTML = '';
     for (const anime of animeCatalog) {
-        catalogHTML += anime.generateHTML();
+        for (let i = 0; i < 7; i++) {
+            catalogHTML += anime.generateHTML();
+        }
     }
     animeList.innerHTML = catalogHTML;
 }
 
 displayAnimeCatalog();
-
-
