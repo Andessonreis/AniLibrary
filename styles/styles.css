@@ -1,7 +1,7 @@
 /* Estilo para o corpo da página */
 
 body {
-    background: #f7f7f8;
+    background: var(--light);
     background-size: cover;
     background-position: center;
     min-height: 450px;
@@ -12,7 +12,7 @@ body {
 /* Estilo para a barra de navegação (navbar) */
 
 nav {
-    background: #171c24;
+    background: var(--dark);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -49,7 +49,7 @@ nav .nav-items li a {
 }
 
 nav .nav-items li a:hover {
-    color: #26d63b;
+    color: var(--primary-neon-blue);
 }
 
 
@@ -78,7 +78,7 @@ nav form .search-data {
 nav form button {
     padding: 0 15px;
     color: #fff;
-    background: #26d63b;
+    background: var(--primary-neon-blue);
     border: none;
     border-radius: 2px;
     border-top-right-radius: 12px;
@@ -88,7 +88,7 @@ nav form button {
 }
 
 nav form button:hover {
-    background: #2b9638;
+    background: var(--primary-neon-blue);
 }
 
 /* Ícones da barra de navegação */
@@ -123,7 +123,7 @@ nav .search-icon:hover {
     }
 
     nav .nav-items li a:hover {
-        color: #26d63b;
+        color:  var(--primary-neon-blue);
     }
 }
 
@@ -165,7 +165,7 @@ nav .search-icon:hover {
     }
 
     nav .nav-items li a:hover {
-        color: #26d63b;
+        color: var(--primary-neon-blue);
     }
 
     nav form {
@@ -269,7 +269,7 @@ nav .logo.space {
     }
 
     nav .nav-items li a:hover {
-        color: #26d63b;
+        color: var(--primary-neon-blue);
     }
 }
 
@@ -311,7 +311,7 @@ nav .logo.space {
     }
 
     nav .nav-items li a:hover {
-        color: #26d63b;
+        color: var(--primary-neon-blue);
     }
 
     nav form {
@@ -367,7 +367,7 @@ nav .logo.space {
 
     nav .cancel-icon.show {
         display: block;
-        color: #26d63b;
+        color: var(--primary-neon-blue);
         transform: translate(-50%, -50%);
     }
 }
@@ -382,7 +382,7 @@ nav .logo.space {
     }
 
     nav .nav-items li a:hover {
-        color: #26d63b;
+        color: var(--primary-neon-blue);
     }
 }
 
@@ -442,7 +442,6 @@ nav .logo.space {
 /* Introdução */
 .intro {
     padding: 40px;
-    background-color: #f7f7f8;
     text-align: center;
 }
 
@@ -474,7 +473,7 @@ nav .logo.space {
     transition: background-color 0.3s ease;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.6);
-    
+
 }
 
 .anime-item:hover {
