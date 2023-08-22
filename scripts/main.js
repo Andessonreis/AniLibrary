@@ -1,3 +1,4 @@
+// recursivide menu-icons
 document.addEventListener("DOMContentLoaded", function () {
     const menuBtn = document.querySelector(".menu-icon");
     const searchBtn = document.querySelector(".search-icon");
@@ -37,6 +38,32 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// banner
+document.addEventListener("DOMContentLoaded", function() {
+    const carousel = document.querySelector('.carousel');
+    const carouselInner = document.querySelector('.carousel-inner');
+    const banners = document.querySelectorAll('.banner');
+    let currentIndex = 0;
+
+    function showBanner(index) {
+        for (let i = 0; i < banners.length; i++) {
+            banners[i].classList.remove('active');
+        }
+        banners[index].classList.add('active');
+    }
+
+    function nextBanner() {
+        currentIndex = (currentIndex + 1) % banners.length;
+        showBanner(currentIndex);
+    }
+
+    // Iniciar o carrossel
+    showBanner(currentIndex);
+    setInterval(nextBanner, 5000); // Alterne os banners a cada 5 segundos
+});
+
+
 
 // Catálogo de animes
 class Anime {
