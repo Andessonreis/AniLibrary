@@ -37,3 +37,38 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Catalago de animes
+class Anime {
+    constructor(title, genre) {
+        this.title = title;
+        this.genre = genre;
+    }
+
+    generateHTML() {
+        return `
+            <div class="anime-item">
+                <h3>${this.title}</h3>
+                <p>Gênero: ${this.genre}</p>
+            </div>
+        `;
+    }
+}
+
+const animeCatalog = [
+    new Anime("Hell's Paradise", "Ação, Sobrenatural, Seinen");
+];
+
+const animeList = document.querySelector('.anime-list');
+
+function displayAnimeCatalog() {
+    let catalogHTML = '';
+    for (const anime of animeCatalog) {
+        catalogHTML += anime.generateHTML();
+    }
+    animeList.innerHTML = catalogHTML;
+}
+
+displayAnimeCatalog();
+
+
