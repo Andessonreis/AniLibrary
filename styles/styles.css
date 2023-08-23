@@ -417,6 +417,7 @@ nav .logo.space {
     cursor: pointer;
     position: relative;
     display: none;
+    margin: auto;
 }
 
 .banner.active {
