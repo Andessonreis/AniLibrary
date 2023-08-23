@@ -409,61 +409,11 @@ nav .logo.space {
 
 /* End of responsividade*/
 
-/* Bunner teste */
-/*
-.carousel {
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
+/* bunner */ 
 .banner {
-    width: 100%;
-    max-width: 600px; 
+    width: 1250px;
     overflow: hidden;
-    height: auto;
-    cursor: pointer;
-    position: relative;
-    display: none;
-    margin: 0 auto; 
-}
-
-.banner.active {
-    display: block;
-}
-
-.banner::after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 2px;
-    width: 100%;
-    height: 8px;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6);
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    max-width: 100%; 
-    max-height: 100%;
-}
-*/
-/* end of bunner teste */
-
-/* bunner */
-.banner {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    height: auto;
+    height: 500px;
     cursor: pointer;
     position: relative;
     display: none;
@@ -479,27 +429,25 @@ nav .logo.space {
     bottom: -8px;
     left: 2px;
     width: 100%;
-    height: 8px;
+    height: 8px ;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6);
 }
 
 .banner-image {
-    max-width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
 }
 
 .banner img {
-    max-width: 100%;
-    max-height: 100%;
     object-fit: cover;
     display: block;
     margin: 0 auto;
 }
 
-/* end of bunner */
+ /* end of bunner */
 
 
 /* Introdução */
