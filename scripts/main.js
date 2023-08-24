@@ -75,7 +75,7 @@ class Anime {
     generateHTML() {
         return `
             <div class="anime-item">
-            <img src="images/Hell's_Paradise-_Jigokuraku,_Vol._5_by_Yuji_Kaku.jpg" alt="Anime Image">
+            <img src="images/catalog/Hell's_Paradise-_Jigokuraku,_Vol._5_by_Yuji_Kaku.jpg" alt="Anime Image">
                 <h3>${this.title}</h3>
                 <p>Gênero: ${this.genre}</p>
             </div>

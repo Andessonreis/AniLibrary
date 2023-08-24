@@ -8,7 +8,11 @@ body {
     height: 100vh;
     margin: 0;
 }
-
+.padrao {
+    max-width: 1300px;
+    border: 1px solid red;
+    margin: auto;
+}
 /* Estilo para a barra de navegação (navbar) */
 
 nav {
@@ -76,13 +80,14 @@ nav form .search-data {
 }
 
 nav form button {
+    border-radius: 0 36px 36px 0;
     padding: 0 15px;
     color: var(--text-light);
     background: var(--primary-neon-blue);
     border: none;
-    border-radius: 2px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    /* border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px; */
+    
     cursor: pointer;
     transition: .2s all;
 }
@@ -411,7 +416,7 @@ nav .logo.space {
 
 /* bunner */ 
 .banner {
-    width: 1250px;
+    width: 100%;
     overflow: hidden;
     height: 500px;
     cursor: pointer;
