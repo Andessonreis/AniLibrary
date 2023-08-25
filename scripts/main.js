@@ -39,6 +39,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Mudança de tema
+document.addEventListener("DOMContentLoaded", function () {
+    const themeToggle = document.getElementById("theme-toggle-button");
+    const body = document.body;
+    const icon = themeToggle.querySelector("i");
+
+    themeToggle.addEventListener("click", function () {
+        body.classList.toggle("dark-theme");
+        body.classList.toggle("light-theme");
+
+        if (body.classList.contains("dark-theme")) {
+            icon.classList.remove("bi-moon");
+            icon.classList.add("bi-sun");
+        } else {
+            icon.classList.remove("bi-sun");
+            icon.classList.add("bi-moon");
+        }
+    });
+});
+
+
+
+
 // banner
 document.addEventListener("DOMContentLoaded", function() {
     const carousel = document.querySelector('.carousel');
