@@ -11,7 +11,7 @@ nav {
 }
 
 nav .logo {
-    color: var(--primary-neon-blue);
+    color: var(--light-primary-neon-blue);
     font-size: 30px;
     font-weight: 600;
     letter-spacing: -1px;
@@ -38,7 +38,7 @@ nav .nav-items li a {
 }
 
 nav .nav-items li a:hover {
-    color: var(--primary-neon-blue);
+    color: var(--light-primary-neon-blue);
 }
 
 
@@ -68,7 +68,7 @@ nav form button {
     border-radius: 0 36px 36px 0;
     padding: 0 15px;
     color: var(--text-light);
-    background: var(--primary-neon-blue);
+    background: var(--light-primary-neon-blue);
     border: none;
     /* border-top-right-radius: 12px;
     border-bottom-right-radius: 12px; */
@@ -78,7 +78,7 @@ nav form button {
 }
 
 nav form button:hover {
-    background: var(--primary-neon-blue);
+    background: var(--light-primary-neon-blue);
 }
 
 /* Ícones da barra de navegação */
@@ -124,7 +124,7 @@ nav .search-icon:hover {
     }
 
     nav .nav-items li a:hover {
-        color:  var(--primary-neon-blue);
+        color:  var(--light-primary-neon-blue);
     }
 }
 
@@ -166,7 +166,7 @@ nav .search-icon:hover {
     }
 
     nav .nav-items li a:hover {
-        color: var(--primary-neon-blue);
+        color: var(--light-primary-neon-blue);
     }
 
     nav form {
@@ -270,7 +270,7 @@ nav .logo.space {
     }
 
     nav .nav-items li a:hover {
-        color: var(--primary-neon-blue);
+        color: var(--light-primary-neon-blue);
     }
 }
 
@@ -312,7 +312,7 @@ nav .logo.space {
     }
 
     nav .nav-items li a:hover {
-        color: var(--primary-neon-blue);
+        color: var(--light-primary-neon-blue);
     }
 
     nav form {
@@ -368,7 +368,7 @@ nav .logo.space {
 
     nav .cancel-icon.show {
         display: block;
-        color: var(--primary-neon-blue);
+        color: var(--light-primary-neon-blue);
         transform: translate(-50%, -50%);
     }
 }
@@ -383,7 +383,7 @@ nav .logo.space {
     }
 
     nav .nav-items li a:hover {
-        color: var(--primary-neon-blue);
+        color: var(--light-primary-neon-blue);
     }
 }
 
@@ -462,7 +462,7 @@ nav .logo.space {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: var(--primary-neon-blue);
+    color: var(--light-primary-neon-blue);
 }
 
 .intro-description {
@@ -476,7 +476,7 @@ nav .logo.space {
 
 .anime-catalog {
     background-color: var(--black);
-    color: var(--primary-neon-blue);
+    color: var(--light-primary-neon-blue);
   }
 
 .anime-list {

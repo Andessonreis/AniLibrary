@@ -16,26 +16,30 @@
   /* Dark theme */
 
   /* Cores Neon */
-  --primary-neon-blue: #2272FF;
-  --neon-hover: #66D9FF;
+  --dark-primary-neon-blue: #002AFF;
+  --dark-secondary-neon-blue: #00B8FF;
+  --dark-neon-green: #00FFB0;
+  --dark-neon-purple: #A600FF;
 
   /* Cores de Fundo */
-  --background-dark: #1D1D1D;
+  --dark-background: #111111;
+  --dark-card-background: #1E1E1E;
 
   /* Cores de Texto */
-  --text-dark: #FFFFFF;
+  --dark-text: #FFFFFF;
 
   /* Outras Cores */
   --dark-grey: #AAAAAA;
-  --danger: #d32f2f;
-  --warning: #fbc02d;
-  --success: #388e3c;
+  --dark-danger: #FF4040;
+  --dark-warning: #FFD500;
+  --dark-success: #00E676;
+
 }
 
 /* Light theme */
-:root.light {
+:root {
   /* Cores Neon */
-  --primary-neon-blue: #2272FF;
+  --light-primary-neon-blue: #2272FF;
   --neon-hover: #66D9FF;
 
   /* Cores de Fundo */
