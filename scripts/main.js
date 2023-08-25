@@ -37,3 +37,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+//
+
+
+const posts = [
+    {img: "", title:"dd"},
+    
+]
+
+const div = document.querySelector('.anime-list');
+
+
+const item = document.querySelector('.anime-item');
+console.log(item)
+
+const gerarItem=()
+item.innerHTML = 
+ <img src="images/hellparadise.jpe" alt="Hell's Paradise">
+<h3>Hell's Paradise</h3>
+<p>Gênero: Ação, Sobrenatural, Seinen</p> 
+
+`
+for (let index = 0; index < 4; index++) {
+   div.appendChild(item);
+}
