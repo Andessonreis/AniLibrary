@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Configurações do projeto head -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,36 +24,38 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="padrao">
+    <header>
+        <!-- Navbar -->
+        <nav>
 
-        <div class="menu-icon">
-            <span class="bi bi-list"></span>
-        </div>
+            <div class="menu-icon">
+                <span class="bi bi-list"></span>
+            </div>
 
-        <div class="logo">ANILIBRARY</div>
+            <div class="logo">ANILIBRARY</div>
 
-        <ul class="nav-items">
-            <li><a href="#">Animes</a></li>
-            <li><a href="#">Mangás</a></li>
-            <li><a href="#">Estúdios</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
+            <ul class="nav-items">
+                <li><a href="#">Animes</a></li>
+                <li><a href="#">Mangás</a></li>
+                <li><a href="#">Estúdios</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
 
-        <div class="cancel-icon">
-            <span class="bi bi-x"></span>
-        </div>
+            <div class="cancel-icon">
+                <span class="bi bi-x"></span>
+            </div>
 
-        <form action="#">
-            <input type="search" class="search-data" placeholder="Search" required>
-            <button type="submit" class="bi bi-search"></button>
-        </form>
+            <form action="#">
+                <input type="search" class="search-data" placeholder="Search" required>
+                <button type="submit" class="bi bi-search"></button>
+            </form>
 
-    </nav>
-    <!-- End of navbar -->
+        </nav>
+        <!-- End of navbar -->
+    </header>
 
     <!-- Conteúdo Principal -->
-    <main class="main-content padrao">
+    <main class="container"> <!-- Aplicando a classe .container para o conteúdo principal -->
 
         <!-- slideshow banner -->
         <div class="carousel">
@@ -85,13 +85,9 @@
                     </div>
                 </div>
 
-        
-                
-
             </div>
         </div>
         <!-- End of slideshow -->
-
 
         <!--Introdução--->
         <section class="intro">

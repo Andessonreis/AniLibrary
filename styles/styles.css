@@ -8,11 +8,13 @@ body {
     height: 100vh;
     margin: 0;
 }
-.padrao {
+
+.container {
     max-width: 1300px;
     border: 1px solid red;
     margin: auto;
 }
+
 /* Estilo para a barra de navegação (navbar) */
 
 nav {
