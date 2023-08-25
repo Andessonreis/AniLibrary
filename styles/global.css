@@ -2,42 +2,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* Configurações gerais */
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
+:root {
+  /* fonts */
+  --font-inter: 'Inter', sans-serif;
   
-  :root {
-    /* fonts */
-    --font-inter: Inter;
-  
-    /* font sizes */
-    --font-size-mini: 15px;
-    --font-size-3xs: 10px;
-    --font-size-5xs: 8px;
-    --font-size-xl: 20px;
-    --font-size-xs: 12px;
+  /* font sizes */
+  --font-size-mini: 15px;
+  --font-size-3xs: 10px;
+  --font-size-5xs: 8px;
+  --font-size-xl: 20px;
+  --font-size-xs: 12px;
 
-    /* Colors */
-    --light : #f6f6f9;
-    --primary: #1976D2;
-    --light-primary: #CFE8FF;
-    --greey: #eee;
-    --dark-grey: #AAAAAA;
-    --dark: #363949;
-    --danger: #d32f2f;
-    --light-danger: #fecdd3;
-    --warning: #fbc02d;
-    --light-warning: #fff2c6;
-    --success: #388e3c;
-    --light-sucess: #BBF7D0;
-    
-    /* border radiuses */
-    --br-8xs: 5px;
-    --br-3xs: 10px;
-    --br-xl: 20px;
-  }
-  
+  /* Dark theme */
+
+  /* Cores Neon */
+  --primary-neon-blue: #2272FF;
+  --neon-hover: #66D9FF;
+
+  /* Cores de Fundo */
+  --background-dark: #1D1D1D;
+
+  /* Cores de Texto */
+  --text-dark: #FFFFFF;
+
+  /* Outras Cores */
+  --dark-grey: #AAAAAA;
+  --danger: #d32f2f;
+  --warning: #fbc02d;
+  --success: #388e3c;
+}
+
+/* Light theme */
+:root.light {
+  /* Cores Neon */
+  --primary-neon-blue: #2272FF;
+  --neon-hover: #66D9FF;
+
+  /* Cores de Fundo */
+  --background-light: #f8f8f8;
+
+  /* Cores de Texto */
+  --text-light: #000000;
+
+  /* Outras Cores */
+  --grey: #eee;
+  --light-warning: #fff2c6;
+  --light-danger: #fecdd3;
+  --light-success: #BBF7D0;
+}
+
+/* Configurações gerais continuadas */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+}
+
+/* border radiuses */
+:root {
+  --br-8xs: 5px;
+  --br-3xs: 10px;
+  --br-xl: 20px;
+}
