@@ -516,3 +516,48 @@ nav .logo.space {
     font-size: 14px;
     color: #888;
 }
+/* End of catalago */
+
+/* Rodapé */
+
+footer {
+    background-color: var(--dark);
+    color: var(--text-light);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons li {
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: var(--light-primary-neon-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: var(--light-primary-neon-blue);
+}
+
+/*End of rodape */
