@@ -59,12 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> test
 // banner
 document.addEventListener("DOMContentLoaded", function() {
     const carousel = document.querySelector('.carousel');
