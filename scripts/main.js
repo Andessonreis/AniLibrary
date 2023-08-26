@@ -60,8 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> test
 // banner
 document.addEventListener("DOMContentLoaded", function() {
     const carousel = document.querySelector('.carousel');
@@ -85,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function() {
     showBanner(currentIndex);
     setInterval(nextBanner, 5000); // Alterne os banners a cada 5 segundos
 });
-
 
 
 // Catálogo de animes
@@ -114,7 +116,7 @@ const animeList = document.querySelector('.anime-list');
 function displayAnimeCatalog() {
     let catalogHTML = '';
     for (const anime of animeCatalog) {
-        for (let i = 0; i < 7; i++) {
+        for (let i = 0; i < 5; i++) {
             catalogHTML += anime.generateHTML();
         }
     }
