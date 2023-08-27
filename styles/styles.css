@@ -529,16 +529,6 @@ nav .logo.space {
 }
 /*End of destaques*/
 
-
-/* Catálogo de animes */
-.anime-catalog-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-/* end of Catálogo de animes */
-
 /* Novos lançamentos */
 .anime-releases-list {
     display: grid;
@@ -546,6 +536,15 @@ nav .logo.space {
     gap: 20px;
 }
 /* End of novos lançamenos */
+
+/* Animes populares */
+.anime-popular-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+/* end of Animes populares */
+
 
 /* Rodapé */
 
