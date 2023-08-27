@@ -459,7 +459,6 @@ nav .logo.space {
 
 /* end of bunner */
 
-
 /* Introdução */
 .intro {
     padding: 40px;
@@ -482,12 +481,15 @@ nav .logo.space {
 
 /* Definindo base para seções de anime */
 .anime-section {
+    margin-bottom: 50px;
     background-color: var(--white);
     color: var(--light-primary-neon-blue);
     padding: 20px 0;
+  
 }
 
 .anime-item {
+   
     background-color: var(--light-gray);
     border-radius: 5px;
     padding: 15px;
@@ -495,6 +497,7 @@ nav .logo.space {
     transition: background-color 0.3s ease;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .anime-item:hover {
@@ -503,7 +506,7 @@ nav .logo.space {
 
 .anime-item img {
     width: 100%;
-    max-height: 85%;
+    max-height: 75%;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;

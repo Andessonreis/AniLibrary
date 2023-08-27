@@ -65,11 +65,12 @@ body {
   height: 100vh;
   margin: 0;
 }
-
 .container {
-  max-width: 1300px;
+  max-width: 1250px;
+  width: 90%;
   border: 1px solid red;
   margin: auto;
+  justify-content: space-between;
 }
 
 /* Configurações gerais continuadas */
