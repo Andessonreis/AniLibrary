@@ -545,9 +545,15 @@ nav .logo.space {
 }
 /* end of Animes populares */
 
+/* Animes que serão lançados*/
+.anime-next-release-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+/* End of lançados*/
 
 /* Rodapé */
-
 footer {
     background-color: var(--dark);
     color: var(--text-light);

@@ -108,7 +108,7 @@ const animeCatalog = [
 const animeEmphasisList = document.querySelector('.anime-emphasis-list');
 const animereleaseslist = document.querySelector('.anime-releases-list');
 const animepopularlist = document.querySelector('.anime-popular-list');
-
+const animenextreleaselist = document.querySelector('.anime-next-release-list');
 
 function displayAnimeCatalog(animeList, container, itemCount) {
     let catalogHTML = '';
@@ -121,5 +121,6 @@ function displayAnimeCatalog(animeList, container, itemCount) {
 displayAnimeCatalog(animeCatalog, animeEmphasisList, 4); 
 displayAnimeCatalog(animeCatalog, animereleaseslist, 4);
 displayAnimeCatalog(animeCatalog, animepopularlist, 4);
+displayAnimeCatalog(animeCatalog, animenextreleaselist, 4);
 
 
