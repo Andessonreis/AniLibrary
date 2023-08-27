@@ -481,7 +481,7 @@ nav .logo.space {
 
 /* Definindo base para seções de anime */
 .anime-section {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     background-color: var(--white);
     color: var(--light-primary-neon-blue);
     padding: 20px 0;

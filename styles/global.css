@@ -4,14 +4,7 @@
 /* Configurações gerais */
 :root {
   /* fonts */
-  --font-inter: 'Inter', sans-serif;
-  
-  /* font sizes */
-  --font-size-mini: 15px;
-  --font-size-3xs: 10px;
-  --font-size-5xs: 8px;
-  --font-size-xl: 20px;
-  --font-size-xs: 12px;
+  --font-montserrat: 'Montserrat', sans-serif;
 
   /* Dark theme */
 
@@ -65,10 +58,11 @@ body {
   height: 100vh;
   margin: 0;
 }
+
 .container {
   max-width: 1250px;
   width: 90%;
-  border: 1px solid red;
+  border: 1px solid var(--dark-danger);
   margin: auto;
   justify-content: space-between;
 }
@@ -79,12 +73,5 @@ body {
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  font-family: var(--font-inter);
-}
-
-/* border radiuses */
-:root {
-  --br-8xs: 5px;
-  --br-3xs: 10px;
-  --br-xl: 20px;
+  font-family: var(--font-montserrat);
 }
