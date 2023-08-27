@@ -83,8 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(nextBanner, 5000); // Alterne os banners a cada 5 segundos
 });
 
-
-// Catálogo de animes
+//Mostra animes  //Mudar a logica!! posivelmente uma api ira substituir
 class Anime {
     constructor(title, genre) {
         this.title = title;
@@ -94,7 +93,7 @@ class Anime {
     generateHTML() {
         return `
             <div class="anime-item">
-            <img src="images/catalog/Hell's_Paradise-_Jigokuraku,_Vol._5_by_Yuji_Kaku.jpg" alt="Anime Image">
+                <img src="images/catalog/Hell's_Paradise-_Jigokuraku,_Vol._5_by_Yuji_Kaku.jpg" alt="Anime Image">
                 <h3>${this.title}</h3>
                 <p>Gênero: ${this.genre}</p>
             </div>
@@ -106,15 +105,17 @@ const animeCatalog = [
     new Anime("Hell's Paradise", "Ação, Sobrenatural, Seinen")
 ];
 
-const animeList = document.querySelector('.anime-list');
-function displayAnimeCatalog() {
+const animeEmphasisList = document.querySelector('.anime-emphasis-list');
+const animeCatalogList = document.querySelector('.anime-catalog-list');
+
+function displayAnimeCatalog(animeList, container, itemCount) {
     let catalogHTML = '';
-    for (const anime of animeCatalog) {
-        for (let i = 0; i < 5; i++) {
-            catalogHTML += anime.generateHTML();
-        }
+    for (let i = 0; i < itemCount; i++) {
+        catalogHTML += animeList[0].generateHTML();
     }
-    animeList.innerHTML = catalogHTML;
+    container.innerHTML = catalogHTML;
 }
 
-displayAnimeCatalog();
+displayAnimeCatalog(animeCatalog, animeEmphasisList, 4); 
+displayAnimeCatalog(animeCatalog, animeCatalogList, 4);
+

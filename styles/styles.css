@@ -488,6 +488,12 @@ nav .logo.space {
     padding: 20px 0;
 }
 
+.anime-emphasis-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
 /*End of destaques*/
 
 /* Catálogo de animes */
@@ -497,7 +503,7 @@ nav .logo.space {
     padding: 20px 0;
 }
 
-.anime-list {
+.anime-catalog-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
