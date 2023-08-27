@@ -107,6 +107,8 @@ const animeCatalog = [
 
 const animeEmphasisList = document.querySelector('.anime-emphasis-list');
 const animeCatalogList = document.querySelector('.anime-catalog-list');
+const animereleaseslist = document.querySelector('.anime-releases-list');
+
 
 function displayAnimeCatalog(animeList, container, itemCount) {
     let catalogHTML = '';
@@ -118,4 +120,5 @@ function displayAnimeCatalog(animeList, container, itemCount) {
 
 displayAnimeCatalog(animeCatalog, animeEmphasisList, 4); 
 displayAnimeCatalog(animeCatalog, animeCatalogList, 4);
+displayAnimeCatalog(animeCatalog, animereleaseslist, 4);
 

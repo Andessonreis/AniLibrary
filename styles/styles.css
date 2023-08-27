@@ -537,7 +537,15 @@ nav .logo.space {
     gap: 20px;
 }
 
-/* Fim dos estilos específicos para Catálogo de animes */
+/* end of Catálogo de animes */
+
+/* Novos lançamentos */
+.anime-releases-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+/* End of novos lançamenos */
 
 /* Rodapé */
 
