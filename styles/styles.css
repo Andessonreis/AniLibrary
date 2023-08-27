@@ -480,33 +480,11 @@ nav .logo.space {
 
 /*End of introdução*/
 
-/* Animes em destaques */
-
-.anime-emphasis {
+/* Definindo base para seções de anime */
+.anime-section {
     background-color: var(--white);
     color: var(--light-primary-neon-blue);
     padding: 20px 0;
-}
-
-.anime-emphasis-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-/*End of destaques*/
-
-/* Catálogo de animes */
-.anime-catalog { /*não sei se vai manter essa class pois irar ter outras sctions logo tvlz usar POO*/
-    background-color: var(--white);
-    color: var(--light-primary-neon-blue);
-    padding: 20px 0;
-}
-
-.anime-catalog-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
 }
 
 .anime-item {
@@ -541,7 +519,25 @@ nav .logo.space {
     font-size: 14px;
     color: var(--dark-grey);
 }
-/* End of catalago */
+/* End of base */
+
+/* Animes em destaques */ /* Usando para exibir os animes ps:mudar a logica*/
+.anime-emphasis-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+/*End of destaques*/
+
+
+/* Catálogo de animes */
+.anime-catalog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Fim dos estilos específicos para Catálogo de animes */
 
 /* Rodapé */
 
