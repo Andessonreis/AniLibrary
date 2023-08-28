@@ -485,6 +485,10 @@ nav .logo.space {
     text-decoration: none;
     margin-left: 30px;
 }
+
+.view-all-link:hover {
+    color: var(--light-primary-neon-blue)
+}
 /* End of View all */
 
 /* Definindo base para seções de anime */
