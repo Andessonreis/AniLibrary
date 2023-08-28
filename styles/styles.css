@@ -1,6 +1,5 @@
 /* Estilo para a barra de navegação (navbar) */
 nav {
-    background: linear-gradient(to bottom, var(--dark), var(--darker));
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -46,7 +45,6 @@ nav form {
     display: flex;
     height: 40px;
     padding: 2px;
-    background: var(--dark);
     min-width: 18% !important;
     border-radius: 2px;
     border: 1px solid rgba(155, 155, 155, 0.2);
@@ -483,7 +481,7 @@ nav .logo.space {
 /*  "View All" link */
 .view-all-link {
     font-size: 14px;
-    color: var(--dark-grey);
+    color: var(--grey);
     text-decoration: none;
     margin-left: 30px;
 }
@@ -507,7 +505,7 @@ nav .logo.space {
 }
 
 .anime-item {
-    background-color: var(--light-gray);
+    background-color: var(--gray);
     border-radius: 5px;
     padding: 15px;
     text-align: center;
@@ -536,7 +534,7 @@ nav .logo.space {
 
 .anime-item p {
     font-size: 14px;
-    color: var(--dark-grey);
+    color: var(--grey);
 }
 /* End of base */
 

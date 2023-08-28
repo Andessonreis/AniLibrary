@@ -22,7 +22,7 @@
   --dark-text: #FFFFFF;
 
   /* Outras Cores */
-  --dark-grey: #AAAAAA;
+  --grey: #AAAAAA;
   --dark-danger: #FF4040;
   --dark-warning: #FFD500;
   --dark-success: #00E676;
@@ -39,10 +39,10 @@
   --background-light: #f8f8f8;
 
   /* Cores de Texto */
-  --dark-grey: #AAAAAA;
+  --text-light: #050303;
+  --grey: #AAAAAA;
 
   /* Outras Cores */
-  --grey: #eee;
   --light-warning: #fff2c6;
   --light-danger: #fecdd3;
   --light-success: #BBF7D0;
