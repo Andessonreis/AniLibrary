@@ -36,7 +36,7 @@
 
   /* Cores de Fundo */
   --background-light:  #F0F8FF;
-  
+
   /* Cores de Texto */
   --light-primary-neon-blue:#A600FF;
   /* --light-primary-neon-blue: #2272FF;*/
@@ -63,7 +63,6 @@ body {
 .container {
   max-width: 1250px;
   width: 90%;
-  border: 1px solid var(--dark-danger);
   margin: auto;
   justify-content: space-between;
 }
