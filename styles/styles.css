@@ -480,6 +480,12 @@ nav .logo.space {
 /*End of introdução*/
 
 /* Definindo base para seções de anime */
+
+.section-title{
+    margin: 0 20px;
+}
+
+
 .anime-section {
     margin-bottom: 10px;
     background-color: var(--white);
