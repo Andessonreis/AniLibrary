@@ -560,6 +560,16 @@ nav .logo.space {
 }
 /*End of destaques*/
 
+.section-description {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
 /* Novos lançamentos */
 .anime-releases-list {
     display: flex;

@@ -123,3 +123,10 @@ displayAnimeCatalog(animeCatalog, animeEmphasisList, 4);
 displayAnimeCatalog(animeCatalog, animereleaseslist, 4);
 displayAnimeCatalog(animeCatalog, animepopularlist, 4);
 displayAnimeCatalog(animeCatalog, animenextreleaselist, 4);
+
+
+
+// Get the description from the database or server-side script.
+//const description = "Prepare-se para uma experiência cinematográfica com os melhores animes em destaque"
+//const description = "Prepare-se para uma experiência cinematográfica com os melhores animes em destaque. Entre na ação como nunca antes.";"
+
