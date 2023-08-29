@@ -484,6 +484,7 @@ nav .logo.space {
     color: var(--grey);
     text-decoration: none;
     margin-left: 30px;
+    transition: color 0.3s ease;
 }
 
 .view-all-link:hover {
@@ -492,7 +493,6 @@ nav .logo.space {
 /* End of View all */
 
 /* Definindo base para seções de anime */
-
 .section-header { /* titulo e view all */
     margin: 0 20px;
     display: flex;
@@ -508,6 +508,11 @@ nav .logo.space {
     background-color: var(--white);
     color: var(--light-primary-neon-blue);
     padding: 20px 0; 
+    position: relative;
+
+  /*add segunda box-shadow*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
 }
 
 .anime-item {
@@ -552,7 +557,6 @@ nav .logo.space {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     flex-wrap: nowrap; /*impede que os anims quebre a linha*/
-  
 }
 /*End of destaques*/
 
