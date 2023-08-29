@@ -103,6 +103,7 @@ class Anime {
 
 const animeCatalog = [
     new Anime("Hell's Paradise", "Ação, Sobrenatural, Seinen")
+    
 ];
 
 const animeEmphasisList = document.querySelector('.anime-emphasis-list');
@@ -122,5 +123,3 @@ displayAnimeCatalog(animeCatalog, animeEmphasisList, 4);
 displayAnimeCatalog(animeCatalog, animereleaseslist, 4);
 displayAnimeCatalog(animeCatalog, animepopularlist, 4);
 displayAnimeCatalog(animeCatalog, animenextreleaselist, 4);
-
-

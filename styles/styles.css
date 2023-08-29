@@ -502,10 +502,12 @@ nav .logo.space {
 }
 
 .anime-section {
+    overflow-x: auto;/*add uma barra +animes de rolagem teste*/
+
     margin-bottom: 10px;
     background-color: var(--white);
     color: var(--light-primary-neon-blue);
-    padding: 20px 0;  
+    padding: 20px 0; 
 }
 
 .anime-item {
@@ -516,6 +518,7 @@ nav .logo.space {
     transition: background-color 0.3s ease;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(25% - 20px); /*add apenas 4 animes por vez*/
 }
 
 .anime-item:hover {
@@ -523,7 +526,7 @@ nav .logo.space {
 }
 
 .anime-item img {
-    width: 100%;
+    width: 90%;
     max-height: 75%;
     object-fit: cover;
     border-radius: 5px;
@@ -548,6 +551,7 @@ nav .logo.space {
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
+    flex-wrap: nowrap; /*impede que os anims quebre a linha*/
   
 }
 /*End of destaques*/
@@ -555,6 +559,7 @@ nav .logo.space {
 /* Novos lançamentos */
 .anime-releases-list {
     display: flex;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
@@ -564,6 +569,7 @@ nav .logo.space {
 /* Animes populares */
 .anime-popular-list {
     display: flex;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
@@ -573,6 +579,7 @@ nav .logo.space {
 /* Animes que serão lançados*/
 .anime-next-release-list {
     display: flex;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
