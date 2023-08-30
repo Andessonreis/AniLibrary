@@ -100,12 +100,4 @@ Desenvolvido por Andesson Reis.
 
 <div style="display: flex; align-items: center;">
   <img src="https://github.com/Andessonreis.png" alt="Andesson Reis" width="70" height="70" style="border-radius: 50%; margin-right: 10px;">
-<<<<<<< HEAD
-  <p>
-    Desenvolvido por Andesson Reis
-  </p>
 </div>
-=======
-
----
->>>>>>> develop
