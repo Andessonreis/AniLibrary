@@ -1,407 +1,18 @@
 /* Estilo para a barra de navegação (navbar) */
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    padding: 0 10px;
-}
 
-nav .logo {
-    color: var(--light-primary-neon-blue);
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: -1px;
-}
 
-nav .nav-items {
-    display: flex;
-    flex: 1;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow-y: auto;
-}
-
-nav .nav-items li {
-    list-style: none;
-    padding: 0 15px;
-}
-
-nav .nav-items li a {
-    color: var(--text-light);
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-nav .nav-items li a:hover {
-    color: var(--light-primary-neon-blue);
-    transition: color 0.2s ease;
-}
-
-nav form {
-    display: flex;
-    height: 40px;
-    padding: 2px;
-    min-width: 18% !important;
-    border-radius: 2px;
-    border: 1px solid rgba(155, 155, 155, 0.2);
-    border-radius: 36px;
-}
-
-nav form .search-data {
-    width: 100%;
-    height: 100%;
-    padding: 0 10px;
-    color: var(--text-light);
-    font-size: 17px;
-    border: none;
-    font-weight: 500;
-    background: none;
-}
-
-nav form button {
-    border-radius: 0 36px 36px 0;
-    padding: 0 15px;
-    color: var(--text-light);
-    background: var(--light-primary-neon-blue);
-    border: none;
-    cursor: pointer;
-    transition: .2s all;
-}
-
-nav form button:hover {
-    background: var(--light-primary-neon-blue);
-}
-
-/* Ícones da barra de navegação */
-nav .menu-icon,
-nav .cancel-icon,
-nav .search-icon {
-    width: 40px;
-    text-align: center;
-    margin: 0 50px;
-    font-size: 18px;
-    color: var(--text-light);
-    cursor: pointer;
-    display: none;
-}
-
-nav .menu-icon span,
-nav .cancel-icon,
-nav .search-icon {
-    display: none;
-}
-
-nav form button,
-nav .menu-icon,
-nav .cancel-icon,
-nav .search-icon {
-    transition: color 0.2s ease;
-}
-
-nav .search-icon:hover {
-    overflow: scroll;
-}
 
 /* Estilos para o botão de mudança de tema */
 .theme-toggle {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #ffffff;
+    background-color: var(--light-primary-neon-blue);
     border-radius: 50%;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsividade */
-
-@media (max-width: 1140px) {
-    nav {
-        padding: 0 ;
-    }
-
-    nav .nav-items li a:hover {
-        color: var(--primary-neon-blue);
-    }
-
-    nav .logo {
-        flex: 2;
-        text-align: center;
-    }
-
-    nav .nav-items {
-        position: fixed;
-        z-index: 99;
-        top: 70px;
-        left: -100%;
-        padding: 10px 50px 0 50px;
-        text-align: center;
-        background: #495c7c;
-        display: inline-block;
-        transition: left 0.3s ease;
-    }
-
-    nav .nav-items.active {
-        left: 0px;
-    }
-
-    nav .nav-items li {
-        line-height: 40px;
-        margin: 30px 0;
-    }
-
-    nav .nav-items li a {
-        font-size: 20px;
-    }
-
-    nav .nav-items li a:hover {
-        color: var(--light-primary-neon-blue);
-    }
-
-    nav form {
-        position: absolute;
-        top: 80px;
-        right: 50px;
-        opacity: 0;
-        pointer-events: none;
-        transition: top 0.3s ease, opacity 0.1s ease;
-    }
-
-    nav form.active {
-        top: 95px;
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    nav form:before {
-        position: absolute;
-        content: "";
-        top: -13px;
-        right: 0px;
-        width: 0;
-        height: 0;
-        z-index: -1;
-        border: 10px solid transparent;
-        border-bottom-color: #1e232b;
-        margin: -20px 0 0;
-    }
-
-    nav form:after {
-        position: absolute;
-        content: '';
-        height: 60px;
-        padding: 2px;
-        background: #1e232b;
-        border-radius: 2px;
-        min-width: calc(100% + 20px);
-        z-index: -2;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    nav .menu-icon {
-        display: block;
-    }
-
-    nav .search-icon,
-    nav .menu-icon span {
-        display: block;
-    }
-
-    nav .menu-icon span.hide,
-    nav .search-icon.hide {
-        display: none;
-    }
-
-    nav .cancel-icon.show {
-        display: block;
-    }
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-
-.content header {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.content .text {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.space {
-    margin: 10px 0;
-}
-
-nav .logo.space {
-    color: var(--danger);
-    padding: 0 5px 0 0;
-}
-
-@media (max-width: 980px) {
-
-    nav .menu-icon,
-    nav .cancel-icon,
-    nav .search-icon {
-        margin: 0 20px;
-    }
-
-    nav form {
-        right: 30px;
-    }
-
-    nav .nav-items li a:hover {
-        color: var(--light-primary-neon-blue);
-    }
-}
-
-@media (max-width: 900px) {
-    nav {
-      padding: 0 50px;
-    }
-  
-    nav .logo {
-      flex: 2;
-      text-align: center;
-      font-size: 22px;
-    }
-  
-    nav .nav-items {
-      position: fixed;
-      z-index: 99;
-      left: -100%;
-      padding: 10px 50px 0 50px;
-      text-align: center;
-      background: #090c11;
-      display: inline-block;
-      transform: translateY(-100%);
-      transform-origin: top;
-      transition: transform 0.5s ease-in-out;
-    }
-  
-    nav .nav-items.active {
-      transform: translateY(0);
-    }
-  
-    nav .nav-items li {
-      line-height: 40px;
-    }
-  
-    nav .nav-items li a {
-      font-size: 20px;
-    }
-  
-    nav .nav-items li a:hover {
-      color: var(--light-primary-neon-blue);
-    }
-  
-    nav form {
-      position: absolute;
-      top: 10px;
-      right: 50px;
-      opacity: 0;
-      pointer-events: none;
-      transition: top 0.3s ease, opacity 0.1s ease;
-    }
-  
-    nav form.active {
-      top: 15px;
-      opacity: 1;
-      pointer-events: auto;
-    }
-  
-    nav form::before {
-      position: absolute;
-      content: "";
-      top: -13px;
-      right: 0px;
-      width: 0;
-      height: 0;
-      z-index: -1;
-      border: 10px solid transparent;
-      border-bottom-color: #073f99;
-      margin: -20px 0 0;
-    }
-  
-    nav form::after {
-      position: absolute;
-      content: '';
-      height: 60px;
-      padding: 2px;
-      background: #474c55;
-      border-radius: 2px;
-      min-width: calc(100% + 20px);
-      z-index: -2;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50, -50%);
-    }
-  
-    nav .menu-icon {
-      display: block;
-    }
-  
-    nav .menu-icon span.hide,
-    nav .search-icon.hide {
-      display: none;
-    }
-  
-    nav .cancel-icon.show {
-      display: block;
-      color: var(--light-primary-neon-blue);
-      transform: translate(-50%, -50%);
-    }
-  }
-  
-
-@media (max-width: 350px) {
-
-    nav .menu-icon,
-    nav .cancel-icon,
-    nav .search-icon {
-        margin: 0 10px;
-        font-size: 16px;
-    }
-
-    nav .nav-items li a:hover {
-        color: var(--light-primary-neon-blue);
-    }
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.content header {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.content .text {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.content .space {
-    margin: 10px 0;
-}
-
-/* End of responsividade*/
 
 /* bunner */
 .banner {
@@ -453,14 +64,14 @@ nav .logo.space {
 
 @keyframes slide {
     from {
-      opacity: 0;
+        opacity: 0;
     }
-  
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
+}
+
 .intro {
     padding: 40px;
     text-align: center;
@@ -495,10 +106,12 @@ nav .logo.space {
 .view-all-link:hover {
     color: var(--light-primary-neon-blue)
 }
+
 /* End of View all */
 
 /* Definindo base para seções de anime */
-.section-header { /* titulo e view all */
+.section-header {
+    /* titulo e view all */
     margin: 0 20px;
     display: flex;
     align-items: center;
@@ -507,17 +120,18 @@ nav .logo.space {
 }
 
 .anime-section {
-    overflow-x: auto;/*add uma barra +animes de rolagem teste*/
+    overflow-x: auto;
+    /*add uma barra +animes de rolagem teste*/
 
     margin-bottom: 10px;
     background-color: var(--white);
     color: var(--light-primary-neon-blue);
-    padding: 20px 0; 
+    padding: 20px 0;
     position: relative;
 
-  /*add segunda box-shadow*/
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 5px; 
+    /*add segunda box-shadow*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .anime-item {
@@ -528,7 +142,8 @@ nav .logo.space {
     transition: background-color 0.3s ease;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 0 0 calc(25% - 20px); /*add apenas 4 animes por vez*/
+    flex: 0 0 calc(25% - 20px);
+    /*add apenas 4 animes por vez*/
 }
 
 .anime-item:hover {
@@ -553,16 +168,20 @@ nav .logo.space {
     font-size: 14px;
     color: var(--grey);
 }
+
 /* End of base */
 
-/* Animes em destaques */ /* Usando para exibir os animes ps:mudar a logica*/
+/* Animes em destaques */
+/* Usando para exibir os animes ps:mudar a logica*/
 .anime-emphasis-list {
     display: flex;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    flex-wrap: nowrap; /*impede que os anims quebre a linha*/
+    flex-wrap: nowrap;
+    /*impede que os anims quebre a linha*/
 }
+
 /*End of destaques*/
 
 .section-description {
@@ -583,6 +202,7 @@ nav .logo.space {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
+
 /* End of novos lançamenos */
 
 /* Animes populares */
@@ -593,6 +213,7 @@ nav .logo.space {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
+
 /* end of Animes populares */
 
 /* Animes que serão lançados*/
@@ -603,6 +224,7 @@ nav .logo.space {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
+
 /* End of lançados*/
 
 /* Rodapé */
