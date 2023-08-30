@@ -47,6 +47,12 @@
   --light-warning: #fff2c6;
   --light-danger: #fecdd3;
   --light-success: #BBF7D0;
+
+
+  /*navbar*/
+  --main-color: #1e1e83;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --menu-width: 40%;
 }
 
 /* Estilo para o corpo da página */

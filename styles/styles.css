@@ -57,14 +57,6 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-
-/* Defina variáveis para reutilizar cores e tamanhos */
-:root {
-    --main-color: #1e1e83;
-    --shadow-color: rgba(0, 0, 0, 0.2);
-    --menu-width: 40%;
-}
-
 /* Responsividade */
 @media (max-width: 768px) {
     /* Hambúrguer */
