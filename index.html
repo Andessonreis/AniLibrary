@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Configurações do projeto head -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/favicon-icon">
 
     <!--Importando os estilos-->
     <link rel="stylesheet" href="styles/global.css">
@@ -24,41 +22,53 @@
 
 <!-- inicio do corpo do projeto -->
 
-<body>
+<body class="light-theme">
 
-    <!-- Navbar -->
-    <nav>
+    <header class="container">
+        <!-- Navbar -->
+        <nav class="navbar container">
+            <div class="logo">ANILIBRARY</div>
 
-        <div class="menu-icon">
-            <span class="bi bi-list"></span>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Animes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Mangás</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Estúdios</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <!--
+            <div class="cancel-icon">
+                <span class="bi bi-x"></span>
+            </div>
+            
+            <form action="#">
+                <input type="search" class="search-data" placeholder="Search" required>
+                <button type="submit" class="bi bi-search"></button>
+            </form>
+            -->
+        <!-- Mundança de tema -->
+        <div class="theme-toggle">
+            <button id="theme-toggle-button" aria-label="Toggle Theme">
+                <i class="bi bi-moon"></i>
+            </button>
         </div>
 
-        <div class="logo">ANILIBRARY</div>
-
-        <ul class="nav-items">
-            <li><a href="#">Animes</a></li>
-            <li><a href="#">Mangás</a></li>
-            <li><a href="#">Estúdios</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-
-        <div class="cancel-icon">
-            <span class="bi bi-x"></span>
-        </div>
-
-        <form action="#">
-            <input type="search" class="search-data" placeholder="Search" required>
-            <button type="submit" class="bi bi-search"></button>
-        </form>
-
-    </nav>
-    <!-- End of navbar -->
+        </nav>
+        <!-- End of navbar -->
+    </header>
 
     <!-- Conteúdo Principal -->
-    <main class="main-content">
+    <main class="container">
 
         <!-- slideshow banner -->
-        <div class="carousel">
+        <div class="carousel container"> <!--Nota: mudar a logica de exibição do bunner usando js -->
             <div class="carousel-inner">
 
                 <div class="banner">
@@ -85,13 +95,9 @@
                     </div>
                 </div>
 
-        
-                
-
             </div>
         </div>
         <!-- End of slideshow -->
-
 
         <!--Introdução--->
         <section class="intro">
@@ -103,15 +109,97 @@
         </section>
         <!--End of introdução -->
 
-        <!-- Catálogo de Animes -->
-        <section class="anime-catalog">
-            <h2 class="section-title">Catálogo de Animes</h2>
-            <div class="anime-list"></div>
+        <!-- Animes em destaques -->
+        <section class="anime-section anime-emphasis container">
+
+            <div class="section-header">
+
+                <h3 class="section-title">Cinema Experience</h3>
+                <!--   <a href="#" class="view-all-link">View all</a>-->
+            </div>
+            <!-- Lista de Animes -->
+            <div class="anime-emphasis-list"></div>
+
+            <!-- Descrição de destaques -->
+            <div class="section-description">
+                <p>Animes em destaque: a experiência cinematográfica que você estava esperando</p>
+                <a href="#" class="view-all-link">Clique aqui para saber mais</a></p>
+            </div>
+
         </section>
-        <!-- End of Seção de Catálogo de Animes -->
+
+        <!-- End of Seção de destaques de Animes -->
+
+        <!--Novos animes -->
+        <section class="anime-section anime-releases container">
+
+            <div class="section-header">
+                <h3 class="section-title">Fresh Horizons</h3>
+                <!-- <a href="#" class="view-all-link">View all</a>-->
+            </div>
+
+            <div class="anime-releases-list"></div> <!-- Lista de Animes -->
+
+            <!-- Descrição de lançamentos -->
+            <div class="section-description">
+                <p>Explore novos horizontes com nossa seleção dos lançamentos mais recentes</p>
+                <a href="#" class="view-all-link">Clique aqui para saber mais</a></p>
+            </div>
+
+        </section>
+        <!-- End of Seção de novos de Animes -->
+
+        <!-- Animes populares -->
+        <section class="anime-section anime-popular container">
+
+            <div class="section-header">
+                <h3 class="section-title">Epic Legends</h3>
+                <!--  <a href="#" class="view-all-link">View all</a> -->
+            </div>
+
+            <div class="anime-popular-list"></div> <!-- Lista de Animes -->
+            <!-- Descrição de populares -->
+            <div class="section-description">
+                <p>Testemunhe as lendas ganharem vida nos animes mais populares de todos os tempos</p>
+                <a href="#" class="view-all-link">Clique aqui para saber mais</a></p>
+            </div>
+
+        </section>
+        <!-- End of Seção de Animes populares -->
+
+        <!-- Animes que serão lançados -->
+        <section class="anime-section anime-next-release container">
+
+            <div class="section-header">
+                <h3 class="section-title">Future Unveiled</h3>
+                <!--<a href="#" class="view-all-link">View all</a>-->
+            </div>
+
+            <div class="anime-next-release-list"></div> <!-- Lista de Animes -->
+            <!-- Descrição de populares -->
+            <div class="section-description">
+                <p>Descubra o futuro dos animes com lançamentos cativantes</p>
+                <a href="#" class="view-all-link">Clique aqui para saber mais</a></p>
+            </div>
+
+        </section>
+        <!-- End of Seção de Animes que serão lançados -->
 
     </main>
     <!--End of main-->
+
+    <!--Rodapé-->
+    <footer class="container">
+        <div class="footer-content">
+            <p>&copy; 2023 AniLibrary. Todos os direitos reservados.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--End of rodape -->
 
 </body>
 <!--End of body-->

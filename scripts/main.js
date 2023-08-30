@@ -1,41 +1,29 @@
-// recursivide menu-icons
+// recursivide
+const hamburguer = document.querySelector(".hamburguer");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburguer.addEventListener("click",() =>{
+    hamburguer.classList.toggle('active');
+    navMenu.classList.toggle('active');
+})
+
+// Mudança de tema
 document.addEventListener("DOMContentLoaded", function () {
-    const menuBtn = document.querySelector(".menu-icon");
-    const searchBtn = document.querySelector(".search-icon");
-    const cancelBtn = document.querySelector(".cancel-icon");
-    const items = document.querySelector(".nav-items");
-    const form = document.querySelector("form");
-    const navLinks = document.querySelectorAll(".nav-items li a");
+    const themeToggle = document.getElementById("theme-toggle-button");
+    const body = document.body;
+    const icon = themeToggle.querySelector("i");
 
-    menuBtn.addEventListener("click", () => {
-        items.classList.toggle("active");
-        menuBtn.classList.toggle("hide");
-        searchBtn.classList.toggle("hide");
-        cancelBtn.classList.toggle("show");
-    });
+    themeToggle.addEventListener("click", function () {
+        body.classList.toggle("dark-theme");
+        body.classList.toggle("light-theme");
 
-    cancelBtn.addEventListener("click", () => {
-        items.classList.remove("active");
-        menuBtn.classList.remove("hide");
-        searchBtn.classList.remove("hide");
-        cancelBtn.classList.remove("show");
-        form.classList.remove("active");
-    });
-
-    searchBtn.addEventListener("click", () => {
-        form.classList.add("active");
-        searchBtn.classList.add("hide");
-        cancelBtn.classList.add("show");
-    });
-
-    navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            items.classList.remove("active"); // Fechando o menu
-            menuBtn.classList.remove("hide");
-            searchBtn.classList.remove("hide");
-            cancelBtn.classList.remove("show");
-            form.classList.remove("active");
-        });
+        if (body.classList.contains("dark-theme")) {
+            icon.classList.remove("bi-moon");
+            icon.classList.add("bi-sun");
+        } else {
+            icon.classList.remove("bi-sun");
+            icon.classList.add("bi-moon");
+        }
     });
 });
 
@@ -63,9 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(nextBanner, 5000); // Alterne os banners a cada 5 segundos
 });
 
-
-
-// Catálogo de animes
+//Mostra animes  //Mudar a logica!! posivelmente uma api ira substituir
 class Anime {
     constructor(title, genre) {
         this.title = title;
@@ -75,7 +61,7 @@ class Anime {
     generateHTML() {
         return `
             <div class="anime-item">
-            <img src="images/Hell's_Paradise-_Jigokuraku,_Vol._5_by_Yuji_Kaku.jpg" alt="Anime Image">
+                <img src="images/catalog/Hell's_Paradise-_Jigokuraku,_Vol._5_by_Yuji_Kaku.jpg" alt="Anime Image">
                 <h3>${this.title}</h3>
                 <p>Gênero: ${this.genre}</p>
             </div>
@@ -85,17 +71,30 @@ class Anime {
 
 const animeCatalog = [
     new Anime("Hell's Paradise", "Ação, Sobrenatural, Seinen")
+    
 ];
 
-const animeList = document.querySelector('.anime-list');
-function displayAnimeCatalog() {
+const animeEmphasisList = document.querySelector('.anime-emphasis-list');
+const animereleaseslist = document.querySelector('.anime-releases-list');
+const animepopularlist = document.querySelector('.anime-popular-list');
+const animenextreleaselist = document.querySelector('.anime-next-release-list');
+
+function displayAnimeCatalog(animeList, container, itemCount) {
     let catalogHTML = '';
-    for (const anime of animeCatalog) {
-        for (let i = 0; i < 7; i++) {
-            catalogHTML += anime.generateHTML();
-        }
+    for (let i = 0; i < itemCount; i++) {
+        catalogHTML += animeList[0].generateHTML();
     }
-    animeList.innerHTML = catalogHTML;
+    container.innerHTML = catalogHTML;
 }
 
-displayAnimeCatalog();
+displayAnimeCatalog(animeCatalog, animeEmphasisList, 4); 
+displayAnimeCatalog(animeCatalog, animereleaseslist, 4);
+displayAnimeCatalog(animeCatalog, animepopularlist, 4);
+displayAnimeCatalog(animeCatalog, animenextreleaselist, 4);
+
+
+
+// Get the description from the database or server-side script.
+//const description = "Prepare-se para uma experiência cinematográfica com os melhores animes em destaque"
+//const description = "Prepare-se para uma experiência cinematográfica com os melhores animes em destaque. Entre na ação como nunca antes.";"
+

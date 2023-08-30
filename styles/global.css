@@ -4,51 +4,67 @@
 /* Configurações gerais */
 :root {
   /* fonts */
-  --font-inter: 'Inter', sans-serif;
-  
-  /* font sizes */
-  --font-size-mini: 15px;
-  --font-size-3xs: 10px;
-  --font-size-5xs: 8px;
-  --font-size-xl: 20px;
-  --font-size-xs: 12px;
+  --font-montserrat: 'Montserrat', sans-serif;
 
   /* Dark theme */
 
   /* Cores Neon */
-  --primary-neon-blue: #2272FF;
-  --neon-hover: #66D9FF;
+  --dark-primary-neon-blue: #002AFF;
+  --dark-secondary-neon-blue: #00B8FF;
+  --dark-neon-green: #00FFB0;
+  --dark-neon-purple: #A600FF;
 
   /* Cores de Fundo */
-  --background-dark: #1D1D1D;
+  --dark-background: #111111;
+  --dark-card-background: #1E1E1E;
 
   /* Cores de Texto */
-  --text-dark: #FFFFFF;
+  --dark-text: #FFFFFF;
 
   /* Outras Cores */
-  --dark-grey: #AAAAAA;
-  --danger: #d32f2f;
-  --warning: #fbc02d;
-  --success: #388e3c;
+  --grey: #AAAAAA;
+  --dark-danger: #FF4040;
+  --dark-warning: #FFD500;
+  --dark-success: #00E676;
+
 }
 
 /* Light theme */
-:root.light {
+:root {
   /* Cores Neon */
-  --primary-neon-blue: #2272FF;
   --neon-hover: #66D9FF;
 
   /* Cores de Fundo */
-  --background-light: #f8f8f8;
+  --background-light:  #F0F8FF;
 
   /* Cores de Texto */
-  --text-light: #000000;
+  --light-primary-neon-blue:#A600FF;
+  /* --light-primary-neon-blue: #2272FF;*/
+  --text-light: #050303;
+  --grey: #AAAAAA;
 
   /* Outras Cores */
-  --grey: #eee;
   --light-warning: #fff2c6;
   --light-danger: #fecdd3;
   --light-success: #BBF7D0;
+}
+
+/* Estilo para o corpo da página */
+
+body {
+  background: var(--background-light);
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 1250px;
+  width: 86.5%;
+  margin: auto;
+  justify-content: space-between;
 }
 
 /* Configurações gerais continuadas */
@@ -57,12 +73,5 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  font-family: var(--font-inter);
-}
-
-/* border radiuses */
-:root {
-  --br-8xs: 5px;
-  --br-3xs: 10px;
-  --br-xl: 20px;
+  font-family: var(--font-montserrat);
 }

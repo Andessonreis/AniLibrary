@@ -1,423 +1,139 @@
-/* Estilo para o corpo da página */
-
-body {
-    background: var(--background-light);
-    background-size: cover;
-    background-position: center;
-    min-height: 450px;
-    height: 100vh;
-    margin: 0;
-}
-
 /* Estilo para a barra de navegação (navbar) */
-
-nav {
-    background: var(--dark);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    padding: 0 100px;
-}
-
-nav .logo {
-    color: var(--primary-neon-blue);
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: -1px;
-}
-
-nav .nav-items {
-    display: flex;
-    flex: 1;
-    list-style: none;
-    padding: 0;
-    overflow-y: auto;
-}
-
-nav .nav-items li {
+li {
     list-style: none;
     padding: 0 15px;
 }
 
-nav .nav-items li a {
+a {
     color: var(--text-light);
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
 }
 
-nav .nav-items li a:hover {
-    color: var(--primary-neon-blue);
-}
-
-
-nav form {
+.navbar {
     display: flex;
-    height: 40px;
-    padding: 2px;
-    background: var(--dark);
-    min-width: 18% !important;
-    border-radius: 2px;
-    border: 1px solid rgba(155, 155, 155, 0.2);
-    border-radius: 36px;
-}
-
-nav form .search-data {
-    width: 100%;
-    height: 100%;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 10px;
-    color: var(--text-light);
-    font-size: 17px;
-    border: none;
-    font-weight: 500;
-    background: none;
+    flex-wrap: wrap;
+    height: 70px;
 }
 
-nav form button {
-    padding: 0 15px;
-    color: var(--text-light);
-    background: var(--primary-neon-blue);
-    border: none;
+.logo {
+    color: var(--light-primary-neon-blue);
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link {
+    transition: 0.5s ease;
+}
+
+.nav-link:hover {
+    color: var(--light-primary-neon-blue);
+    transition: color 0.2s ease;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
     border-radius: 2px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-    cursor: pointer;
-    transition: .2s all;
+    margin: 5px auto;
+    background-color:var(--light-primary-neon-blue);
+    transition: all 0.3s ease-in-out;
 }
 
-nav form button:hover {
-    background: var(--primary-neon-blue);
-}
 
-/* Ícones da barra de navegação */
-nav .menu-icon,
-nav .cancel-icon,
-nav .search-icon {
-    width: 40px;
-    text-align: center;
-    margin: 0 50px;
-    font-size: 18px;
-    color: var(--text-light);
-    cursor: pointer;
-    display: none;
+/* Defina variáveis para reutilizar cores e tamanhos */
+:root {
+    --main-color: #1e1e83;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --menu-width: 40%;
 }
-
-nav .menu-icon span,
-nav .cancel-icon,
-nav .search-icon {
-    display: none;
-}
-
-nav .search-icon:hover {
-    overflow: scroll;
-}
-
 
 /* Responsividade */
-
-@media (max-width: 1245px) {
-    nav {
-        padding: 0 50px;
+@media (max-width: 768px) {
+    /* Hambúrguer */
+    .hamburguer {
+        display: block;
     }
 
-    nav .nav-items li a:hover {
-        color:  var(--primary-neon-blue);
-    }
-}
-
-@media (max-width: 1140px) {
-    nav {
-        padding: 0px;
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
     }
 
-    nav .logo {
-        flex: 2;
-        text-align: center;
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
 
-    nav .nav-items {
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Menu de navegação */
+    .nav-menu {
         position: fixed;
-        z-index: 99;
-        top: 70px;
-        width: 100%;
         left: -100%;
-        height: 100%;
-        padding: 10px 50px 0 50px;
-        text-align: center;
-        background: #14181f;
-        display: inline-block;
-        transition: left 0.3s ease;
-    }
-
-    nav .nav-items.active {
-        left: 0px;
-    }
-
-    nav .nav-items li {
-        line-height: 40px;
-        margin: 30px 0;
-    }
-
-    nav .nav-items li a {
-        font-size: 20px;
-    }
-
-    nav .nav-items li a:hover {
-        color: var(--primary-neon-blue);
-    }
-
-    nav form {
-        position: absolute;
-        top: 80px;
-        right: 50px;
-        opacity: 0;
-        pointer-events: none;
-        transition: top 0.3s ease, opacity 0.1s ease;
-    }
-
-    nav form.active {
-        top: 95px;
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    nav form:before {
-        position: absolute;
-        content: "";
-        top: -13px;
-        right: 0px;
-        width: 0;
-        height: 0;
-        z-index: -1;
-        border: 10px solid transparent;
-        border-bottom-color: #1e232b;
-        margin: -20px 0 0;
-    }
-
-    nav form:after {
-        position: absolute;
-        content: '';
-        height: 60px;
-        padding: 2px;
-        background: #1e232b;
-        border-radius: 2px;
-        min-width: calc(100% + 20px);
-        z-index: -2;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    nav .menu-icon {
-        display: block;
-    }
-
-    nav .search-icon,
-    nav .menu-icon span {
-        display: block;
-    }
-
-    nav .menu-icon span.hide,
-    nav .search-icon.hide {
-        display: none;
-    }
-
-    nav .cancel-icon.show {
-        display: block;
-    }
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-
-.content header {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.content .text {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.space {
-    margin: 10px 0;
-}
-
-nav .logo.space {
-    color: var(--danger);
-    padding: 0 5px 0 0;
-}
-
-@media (max-width: 980px) {
-
-    nav .menu-icon,
-    nav .cancel-icon,
-    nav .search-icon {
-        margin: 0 20px;
-    }
-
-    nav form {
-        right: 30px;
-    }
-
-    nav .nav-items li a:hover {
-        color: var(--primary-neon-blue);
-    }
-}
-
-@media (max-width: 900px) {
-    nav {
-        padding: 0 50px;
-    }
-
-    nav .logo {
-        flex: 2;
-        text-align: center;
-        font-size: 22px;
-    }
-
-    nav .nav-items {
-        position: absolute;
-        z-index: 99;
         top: 70px;
-        width: 100%;
-        left: -100%;
-        height: 100%;
-        padding: 10px 50px 0 50px;
+        border-radius: 0 0 20px 20px;
+        background-color: var(--main-color);
         text-align: center;
-        background: #14181f;
-        display: inline-block;
-        transition: left 0.3s ease;
+        flex-direction: column;       
+        transition: left 0.3s;
+        z-index: 100;
+        box-shadow: 0px 2px 8px var(--shadow-color);
+        padding: 10px 0;
+        width: var(--menu-width);
     }
 
-    nav .nav-items.active {
-        left: 0px;
+    .nav-item {
+        margin: 16px 0;
     }
 
-    nav .nav-items li {
-        line-height: 40px;
-    }
-
-    nav .nav-items li a {
-        font-size: 20px;
-    }
-
-    nav .nav-items li a:hover {
-        color: var(--primary-neon-blue);
-    }
-
-    nav form {
-        position: absolute;
-        top: 10px;
-        right: 50px;
-        opacity: 0;
-        pointer-events: none;
-        transition: top 0.3s ease, opacity 0.1s ease;
-    }
-
-    nav form.active {
-        top: 15px;
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    nav form::before {
-        position: absolute;
-        content: "";
-        top: -13px;
-        right: 0px;
-        width: 0;
-        height: 0;
-        z-index: -1;
-        border: 10px solid transparent;
-        border-bottom-color: #1e232b;
-        margin: -20px 0 0;
-    }
-
-    nav form::after {
-        position: absolute;
-        content: '';
-        height: 60px;
-        padding: 2px;
-        background: #474c55;
-        border-radius: 2px;
-        min-width: calc(100% + 20px);
-        z-index: -2;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50, -50%);
-    }
-
-    nav .menu-icon {
-        display: block;
-    }
-
-    nav .menu-icon span.hide,
-    nav .search-icon.hide {
-        display: none;
-    }
-
-    nav .cancel-icon.show {
-        display: block;
-        color: var(--primary-neon-blue);
-        transform: translate(-50%, -50%);
+    /* Menu ativo */
+    .nav-menu.active {
+        left: 0;
     }
 }
 
-@media (max-width: 350px) {
 
-    nav .menu-icon,
-    nav .cancel-icon,
-    nav .search-icon {
-        margin: 0 10px;
-        font-size: 16px;
-    }
 
-    nav .nav-items li a:hover {
-        color: var(--primary-neon-blue);
-    }
+/* Estilos para o botão de mudança de tema */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--light-primary-neon-blue);
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-.content header {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.content .text {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.content .space {
-    margin: 10px 0;
-}
-
-/* End of responsividade*/
-
-/* bunner */ 
+/* bunner */
 .banner {
-    width: 1250px;
+    width: 100%;
     overflow: hidden;
     height: 500px;
     cursor: pointer;
     position: relative;
     display: none;
     margin: auto;
+    z-index: 0;
 }
 
 .banner.active {
@@ -430,7 +146,7 @@ nav .logo.space {
     bottom: -8px;
     left: 2px;
     width: 100%;
-    height: 8px ;
+    height: 8px;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -448,20 +164,37 @@ nav .logo.space {
     margin: 0 auto;
 }
 
- /* end of bunner */
+.banner:hover {
+    filter: brightness(0.8);
+    transition: filter 0.3s ease;
+}
 
+/* end of bunner */
 
 /* Introdução */
+
+@keyframes slide {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .intro {
     padding: 40px;
     text-align: center;
+    animation-delay: 2s;
 }
 
 .intro-title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: var(--primary-neon-blue);
+    color: var(--light-primary-neon-blue);
+    animation: slide 2s ease-in-out;
 }
 
 .intro-description {
@@ -471,47 +204,179 @@ nav .logo.space {
 
 /*End of introdução*/
 
-/* Catálogo de animes */
 
-.anime-catalog {
-    background-color: var(--black);
-    color: var(--primary-neon-blue);
-  }
+/*  "View All" link */
+.view-all-link {
+    font-size: 14px;
+    color: var(--grey);
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
 
-.anime-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+.view-all-link:hover {
+    color: var(--light-primary-neon-blue)
+}
+
+/* End of View all */
+
+/* Definindo base para seções de anime */
+.section-header {
+    /* titulo e view all */
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.anime-section {
+    overflow-x: auto;
+    /*add uma barra +animes de rolagem teste*/
+
+    margin-bottom: 10px;
+    background-color: var(--white);
+    color: var(--light-primary-neon-blue);
+    padding: 20px 0;
+    position: relative;
+
+    /*add segunda box-shadow*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .anime-item {
-    background-color: #f7f7f8;
+    background-color: var(--gray);
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.6);
-
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(25% - 20px);
+    /*add apenas 4 animes por vez*/
 }
 
 .anime-item:hover {
-    background-color: #e0e0e0;
+    background-color: var(--gray);
 }
 
 .anime-item img {
-    width: 100%;
-    height: 85%;
+    width: 90%;
+    max-height: 75%;
+    object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .anime-item h3 {
     font-size: 18px;
-    margin: 5px 0;
+    margin: 10px 0;
+    color: var(--light-primary-neon-blue);
 }
 
 .anime-item p {
     font-size: 14px;
-    color: #888;
+    color: var(--grey);
 }
+
+/* End of base */
+
+/* Animes em destaques */
+/* Usando para exibir os animes ps:mudar a logica*/
+.anime-emphasis-list {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    flex-wrap: nowrap;
+    /*impede que os anims quebre a linha*/
+}
+
+/*End of destaques*/
+
+.section-description {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+/* Novos lançamentos */
+.anime-releases-list {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* End of novos lançamenos */
+
+/* Animes populares */
+.anime-popular-list {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* end of Animes populares */
+
+/* Animes que serão lançados*/
+.anime-next-release-list {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* End of lançados*/
+
+/* Rodapé */
+footer {
+    background-color: var(--dark);
+    color: var(--text-light);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons li {
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: var(--light-primary-neon-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: var(--light-primary-neon-blue);
+}
+
+/*End of rodape */
