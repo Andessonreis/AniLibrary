@@ -21,7 +21,7 @@ a {
 }
 
 .logo {
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
     font-size: 24px;
     font-weight: 600;
     letter-spacing: -1px;
@@ -38,7 +38,7 @@ a {
 }
 
 .nav-link:hover {
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
     transition: color 0.2s ease;
 }
 
@@ -53,7 +53,7 @@ a {
     height: 3px;
     border-radius: 2px;
     margin: 5px auto;
-    background-color:var(--light-primary-neon-blue);
+    background-color:var(--light-primary-deep-purple);
     transition: all 0.3s ease-in-out;
 }
 
@@ -109,7 +109,7 @@ a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: var(--light-primary-neon-blue);
+    background-color: var(--light-primary-deep-purple);
     border-radius: 50%;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -185,7 +185,7 @@ a {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
     animation: slide 2s ease-in-out;
 }
 
@@ -207,7 +207,7 @@ a {
 }
 
 .view-all-link:hover {
-    color: var(--light-primary-neon-blue)
+    color: var(--light-primary-deep-purple)
 }
 
 /* End of View all */
@@ -228,7 +228,7 @@ a {
 
     margin-bottom: 10px;
     background-color: var(--white);
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
     padding: 20px 0;
     position: relative;
 
@@ -264,7 +264,7 @@ a {
 .anime-item h3 {
     font-size: 18px;
     margin: 10px 0;
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
 }
 
 .anime-item p {
@@ -359,13 +359,13 @@ footer {
 }
 
 .social-icons a {
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .social-icons a:hover {
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
 }
 
 /*End of rodape */
