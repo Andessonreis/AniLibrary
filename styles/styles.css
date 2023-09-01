@@ -184,6 +184,10 @@ a {
     animation: slide 2s ease-in-out;
 }
 
+.intro-title.dark-theme {
+    color: var(--neon-blue);
+}
+
 .intro-description {
     font-size: 18px;
     color: #444;
