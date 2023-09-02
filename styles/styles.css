@@ -100,6 +100,10 @@ a {
     .nav-menu.active {
         left: 0;
     }
+
+    .anime-item {
+        flex: 0 0 calc(25% - 20px);
+    }
 }
 
 /* Estilos para o botão de mudança de tema */
@@ -118,7 +122,8 @@ a {
 .banner {
     width: 100%;
     overflow: hidden;
-    height: 500px;
+    height: 60vh;
+    object-fit: cover;
     cursor: pointer;
     position: relative;
     display: none;
@@ -236,6 +241,7 @@ a {
 
 .anime-item {
     background-color: var(--gray);
+    width: 100%;
     border-radius: 5px;
     padding: 15px;
     text-align: center;
@@ -243,6 +249,7 @@ a {
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     flex: 0 0 calc(25% - 20px); /*add apenas 4 animes por vez*/
+    margin: 0 1%;
 }
 
 .anime-item:hover {
@@ -276,7 +283,8 @@ a {
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    flex-wrap: nowrap; /*impede que os anims quebre a linha*/
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+    /*flex-wrap: nowrap;*/ /*impede que os anims quebre a linha*/
 }
 /*End of destaques*/
 
