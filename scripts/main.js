@@ -2,7 +2,7 @@
 const hamburguer = document.querySelector(".hamburguer");
 const navMenu = document.querySelector(".nav-menu");
 
-hamburguer.addEventListener("click",() =>{
+hamburguer.addEventListener("click", () => {
     hamburguer.classList.toggle('active');
     navMenu.classList.toggle('active');
 })
@@ -14,21 +14,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const icon = themeToggle.querySelector("i");
 
     themeToggle.addEventListener("click", function () {
-        body.classList.toggle("dark-theme");
-        body.classList.toggle("light-theme");
-
         if (body.classList.contains("dark-theme")) {
+            body.classList.remove("dark-theme");
+            body.classList.add("light-theme");
             icon.classList.remove("bi-moon");
             icon.classList.add("bi-sun");
         } else {
+            body.classList.remove("light-theme");
+            body.classList.add("dark-theme");
             icon.classList.remove("bi-sun");
             icon.classList.add("bi-moon");
         }
     });
 });
 
+
 // banner
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector('.carousel');
     const carouselInner = document.querySelector('.carousel-inner');
     const banners = document.querySelectorAll('.banner');
@@ -71,7 +73,7 @@ class Anime {
 
 const animeCatalog = [
     new Anime("Hell's Paradise", "Ação, Sobrenatural, Seinen")
-    
+
 ];
 
 const animeEmphasisList = document.querySelector('.anime-emphasis-list');
@@ -87,7 +89,7 @@ function displayAnimeCatalog(animeList, container, itemCount) {
     container.innerHTML = catalogHTML;
 }
 
-displayAnimeCatalog(animeCatalog, animeEmphasisList, 4); 
+displayAnimeCatalog(animeCatalog, animeEmphasisList, 4);
 displayAnimeCatalog(animeCatalog, animereleaseslist, 4);
 displayAnimeCatalog(animeCatalog, animepopularlist, 4);
 displayAnimeCatalog(animeCatalog, animenextreleaselist, 4);

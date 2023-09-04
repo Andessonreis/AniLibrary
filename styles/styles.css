@@ -21,7 +21,7 @@ a {
 }
 
 .logo {
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
     font-size: 24px;
     font-weight: 600;
     letter-spacing: -1px;
@@ -38,7 +38,7 @@ a {
 }
 
 .nav-link:hover {
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
     transition: color 0.2s ease;
 }
 
@@ -53,7 +53,7 @@ a {
     height: 3px;
     border-radius: 2px;
     margin: 5px auto;
-    background-color:var(--light-primary-neon-blue);
+    background-color:var(--light-primary-deep-purple);
     transition: all 0.3s ease-in-out;
 }
 
@@ -100,27 +100,30 @@ a {
     .nav-menu.active {
         left: 0;
     }
+
+    .anime-item {
+        flex: 0 0 calc(25% - 20px);
+    }
 }
-
-
 
 /* Estilos para o botão de mudança de tema */
 .theme-toggle {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: var(--light-primary-neon-blue);
+    background-color: var(--light-primary-deep-purple);
     border-radius: 50%;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
-
 
 /* bunner */
 .banner {
     width: 100%;
     overflow: hidden;
-    height: 500px;
+    height: 60vh;
+    object-fit: cover;
     cursor: pointer;
     position: relative;
     display: none;
@@ -160,11 +163,9 @@ a {
     filter: brightness(0.8);
     transition: filter 0.3s ease;
 }
-
 /* end of bunner */
 
 /* Introdução */
-
 @keyframes slide {
     from {
         opacity: 0;
@@ -185,17 +186,19 @@ a {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
     animation: slide 2s ease-in-out;
+}
+
+.intro-title.dark-theme {
+    color: var(--neon-blue);
 }
 
 .intro-description {
     font-size: 18px;
     color: #444;
 }
-
 /*End of introdução*/
-
 
 /*  "View All" link */
 .view-all-link {
@@ -207,9 +210,8 @@ a {
 }
 
 .view-all-link:hover {
-    color: var(--light-primary-neon-blue)
+    color: var(--light-primary-deep-purple)
 }
-
 /* End of View all */
 
 /* Definindo base para seções de anime */
@@ -225,10 +227,9 @@ a {
 .anime-section {
     overflow-x: auto;
     /*add uma barra +animes de rolagem teste*/
-
     margin-bottom: 10px;
     background-color: var(--white);
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
     padding: 20px 0;
     position: relative;
 
@@ -239,14 +240,14 @@ a {
 
 .anime-item {
     background-color: var(--gray);
+    width: 100%;
     border-radius: 5px;
     padding: 15px;
     text-align: center;
     transition: background-color 0.3s ease;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 0 0 calc(25% - 20px);
-    /*add apenas 4 animes por vez*/
+    flex: 0 0 calc(25% - 20px); /*add apenas 4 animes por vez*/
 }
 
 .anime-item:hover {
@@ -264,14 +265,13 @@ a {
 .anime-item h3 {
     font-size: 18px;
     margin: 10px 0;
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
 }
 
 .anime-item p {
     font-size: 14px;
     color: var(--grey);
 }
-
 /* End of base */
 
 /* Animes em destaques */
@@ -281,21 +281,19 @@ a {
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    flex-wrap: nowrap;
-    /*impede que os anims quebre a linha*/
+   /* flex-wrap: wrap;*/ /* Permite que os itens quebrem a linha em telas menores */
+    flex-wrap: nowrap; /*impede que os anims quebre a linha*/
 }
-
 /*End of destaques*/
 
+/* Descrição das section */
 .section-description {
     margin-top: 20px;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
 }
-
-
-
+/* End of descrição*/
 
 /* Novos lançamentos */
 .anime-releases-list {
@@ -305,7 +303,6 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
-
 /* End of novos lançamenos */
 
 /* Animes populares */
@@ -316,7 +313,6 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
-
 /* end of Animes populares */
 
 /* Animes que serão lançados*/
@@ -327,7 +323,6 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
-
 /* End of lançados*/
 
 /* Rodapé */
@@ -362,13 +357,12 @@ footer {
 }
 
 .social-icons a {
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .social-icons a:hover {
-    color: var(--light-primary-neon-blue);
+    color: var(--light-primary-deep-purple);
 }
-
 /*End of rodape */

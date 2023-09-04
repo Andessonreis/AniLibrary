@@ -35,6 +35,14 @@ O projeto AniLibrary é organizado da seguinte forma:
 - `images/`: Diretório que armazena as imagens utilizadas no site.
 - `favicon.ico`: Ícone do site exibido na barra do navegador.
 
+## Seções do Projeto
+
+O AniLibrary possui as seguintes seções:
+
+- **Animes em Destaque**: Os animes em destaque são exibidos nesta seção.
+- **Novos Lançamentos**: Confira os animes que acabaram de ser lançados.
+- **Animes Populares**: Descubra quais são os animes mais populares no momento.
+- **Próximos Lançamentos**: Fique por dentro dos animes que estão por vir.
 
 ## Cores e Temas
 
@@ -80,15 +88,6 @@ O AniLibrary possui dois temas: claro e escuro. As cores utilizadas nos temas po
   - Cor de Sucesso Escura: `--dark-success`
 
 Essas cores e temas foram selecionados para criar uma experiência visual envolvente e agradável para os usuários ao explorarem o catálogo de animes.
-
-## Seções do Projeto
-
-O AniLibrary possui as seguintes seções:
-
-- **Animes em Destaque**: Os animes em destaque são exibidos nesta seção.
-- **Novos Lançamentos**: Confira os animes que acabaram de ser lançados.
-- **Animes Populares**: Descubra quais são os animes mais populares no momento.
-- **Próximos Lançamentos**: Fique por dentro dos animes que estão por vir.
 
 ## Licença
 
