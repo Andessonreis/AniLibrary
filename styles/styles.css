@@ -53,7 +53,7 @@ a {
     height: 3px;
     border-radius: 2px;
     margin: 5px auto;
-    background-color:var(--light-primary-deep-purple);
+    background-color: var(--light-primary-deep-purple);
     transition: all 0.3s ease-in-out;
 }
 
@@ -114,6 +114,7 @@ a {
     filter: brightness(0.8);
     transition: filter 0.3s ease;
 }
+
 /* end of bunner */
 
 /* Introdução */
@@ -149,6 +150,7 @@ a {
     font-size: 18px;
     color: #444;
 }
+
 /*End of introdução*/
 
 /*  "View All" link */
@@ -163,6 +165,7 @@ a {
 .view-all-link:hover {
     color: var(--light-primary-deep-purple)
 }
+
 /* End of View all */
 
 /* Definindo base para seções de anime */
@@ -198,7 +201,8 @@ a {
     transition: background-color 0.3s ease;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 0 0 calc(25% - 20px); /*add apenas 4 animes por vez*/
+    flex: 0 0 calc(25% - 20px);
+    /*add apenas 4 animes por vez*/
 }
 
 .anime-item:hover {
@@ -223,6 +227,7 @@ a {
     font-size: 14px;
     color: var(--grey);
 }
+
 /* End of base */
 
 /* Animes em destaques */
@@ -232,9 +237,12 @@ a {
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-   /* flex-wrap: wrap;*/ /* Permite que os itens quebrem a linha em telas menores */
-    flex-wrap: nowrap; /*impede que os anims quebre a linha*/
+    /* flex-wrap: wrap;*/
+    /* Permite que os itens quebrem a linha em telas menores */
+    flex-wrap: nowrap;
+    /*impede que os anims quebre a linha*/
 }
+
 /*End of destaques*/
 
 /* Descrição das section */
@@ -244,6 +252,7 @@ a {
     font-size: 18px;
     font-weight: bold;
 }
+
 /* End of descrição*/
 
 /* Novos lançamentos */
@@ -254,6 +263,7 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
+
 /* End of novos lançamenos */
 
 /* Animes populares */
@@ -264,6 +274,7 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
+
 /* end of Animes populares */
 
 /* Animes que serão lançados*/
@@ -274,6 +285,7 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
+
 /* End of lançados*/
 
 /* Rodapé */
@@ -316,4 +328,5 @@ footer {
 .social-icons a:hover {
     color: var(--light-primary-deep-purple);
 }
+
 /*End of rodape */

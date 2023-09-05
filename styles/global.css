@@ -16,11 +16,12 @@
   /* Cores de Fundo */
   --dark-bg: #1a1a1a;
   /* Cores de Texto */
-  --text-dark: #333333; 
+  --text-dark: #333333;
 
   /* Outras Cores */
-  --main-color: #242424; /* Cor principal para o tema Dark */
-  --shadow-color: rgba(0, 0, 0, 0.3); 
+  --main-color: #242424;
+  /* Cor principal para o tema Dark */
+  --shadow-color: rgba(0, 0, 0, 0.3);
   --light-primary-deep-purple: #9c27b0
 }
 
@@ -31,10 +32,10 @@
   --neon-hover: #66D9FF;
 
   /* Cores de Fundo */
-  --background-light:  #F0F8FF;
+  --background-light: #F0F8FF;
 
   /* Cores de Texto */
-  --light-primary-deep-purple:#A600FF;
+  --light-primary-deep-purple: #A600FF;
   /* --light-primary-neon-blue: #2272FF;*/
   --text-light: #050303;
   --grey: #AAAAAA;
