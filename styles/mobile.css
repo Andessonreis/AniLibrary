@@ -42,7 +42,7 @@
     .nav-menu.active {
         left: 0;
     }
-
+    /* Seção de animes */
     .anime-item {
         flex: 0 0 calc(25% - 20px);
     }
