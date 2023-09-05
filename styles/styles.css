@@ -207,6 +207,8 @@ a {
 
 .anime-item:hover {
     background-color: var(--gray);
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
 }
 
 .anime-item img {
