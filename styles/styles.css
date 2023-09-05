@@ -57,55 +57,6 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    /* Hambúrguer */
-    .hamburguer {
-        display: block;
-    }
-
-    .hamburguer.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburguer.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburguer.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    /* Menu de navegação */
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        border-radius: 0 0 20px 20px;
-        background-color: var(--main-color);
-        text-align: center;
-        flex-direction: column;       
-        transition: left 0.3s;
-        z-index: 100;
-        box-shadow: 0px 2px 8px var(--shadow-color);
-        padding: 10px 0;
-        width: var(--menu-width);
-    }
-
-    .nav-item {
-        margin: 16px 0;
-    }
-
-    /* Menu ativo */
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .anime-item {
-        flex: 0 0 calc(25% - 20px);
-    }
-}
-
 /* Estilos para o botão de mudança de tema */
 .theme-toggle {
     position: fixed;
