@@ -69,7 +69,7 @@ a {
     cursor: pointer;
 }
 
-/* bunner */
+/* banner */
 .banner {
     width: 100%;
     overflow: hidden;
@@ -115,7 +115,7 @@ a {
     transition: filter 0.3s ease;
 }
 
-/* end of bunner */
+/* end of banner */
 
 /* Introdução */
 @keyframes slide {

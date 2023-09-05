@@ -42,8 +42,40 @@
     .nav-menu.active {
         left: 0;
     }
+
     /* Seção de animes */
     .anime-item {
         flex: 0 0 calc(25% - 20px);
     }
+}
+
+
+/* Banner responsivo */
+@media screen and (max-width: 991px) {
+    .banner {
+        max-height: 60vh;
+        height: auto;
+    }
+
+    .banner::after {
+        display: none;
+    }
+
+    .banner-image {
+        height: 100%;
+        padding: 10px;
+    }
+
+    .banner img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .banner:hover {
+        filter: none;
+    }
+
 }
