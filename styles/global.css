@@ -6,28 +6,8 @@
   /* fonts */
   --font-montserrat: 'Montserrat', sans-serif;
 
-  /* Dark theme */
+  /*** Light theme ***/
 
-  /* Cores Neon */
-  --neon-pink: #ff00ff;
-  --neon-blue: #00ffff;
-  --neon-green: #00ff00;
-
-  /* Cores de Fundo */
-  --dark-bg: #1a1a1a;
-  /* Cores de Texto */
-  --text-dark: #333333;
-
-  /* Outras Cores */
-  --main-color: #242424;
-  /* Cor principal para o tema Dark */
-  --shadow-color: rgba(0, 0, 0, 0.3);
-  --light-primary-deep-purple: #9c27b0;
-}
-
-
-/* Light theme */
-:root {
   /* Cores Neon */
   --neon-hover: #66D9FF;
 
@@ -40,21 +20,48 @@
   --text-light: #050303;
   --grey: #AAAAAA;
 
+  /*navbar*/
+  --main-color: #1e1e83;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --menu-width: 40%;
+
   /* Outras Cores */
   --light-warning: #fff2c6;
   --light-danger: #fecdd3;
   --light-success: #BBF7D0;
 
 
-  /*navbar*/
-  --main-color: #1e1e83;
-  --shadow-color: rgba(0, 0, 0, 0.2);
-  --menu-width: 40%;
+  /*** Dark theme ***/
+
+  /* Cores Neon */
+  --neon-pink: #ff00ff;
+  --neon-blue: #00ffff;
+  --neon-green: #00ff00;
+
+  /* Cores de Fundo */
+  --dark-bg: #1a1a1a;
+
+  /* Cores de Texto */
+  --text-dark: #333333;
+
+  /* Outras Cores */
+  --main-color: #242424;
+
+  /* Cor principal para o tema Dark */
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --light-primary-deep-purple: #9c27b0;
 }
 
-/* Estilo para o corpo da página */
+/* Configurações gerais continuadas */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: var(--font-montserrat);
+}
 
-
+/* Estilo para o corpo da página default */
 body {
   background: var(--background-light);
   background-size: cover;
@@ -66,23 +73,16 @@ body {
   position: relative;
 }
 
+/* Estilo para o corpo da página dark on */
 body.dark-theme {
   background: var(--dark-bg);
 
 }
 
+/* Container global para a pagina */
 .container {
   max-width: 1250px;
   width: 86.5%;
   margin: 0 auto;
   justify-content: space-between;
-}
-
-/* Configurações gerais continuadas */
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-  font-family: var(--font-montserrat);
 }

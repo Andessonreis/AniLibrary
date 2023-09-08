@@ -1,4 +1,4 @@
-/* Estilo para a barra de navegação (navbar) */
+/* Header */
 .container-header{
     width: 100%;
     background-color: #ddd;
@@ -7,7 +7,10 @@
     top:0;
     z-index: 100;
 }
+/* End of header */
 
+
+/* Estilo para a barra de navegação (navbar) */
 li {
     list-style: none;
     padding: 0 15px;
