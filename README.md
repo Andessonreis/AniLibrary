@@ -14,13 +14,14 @@ O AniLibrary foi desenvolvido utilizando as seguintes tecnologias:
   - ![HTML](https://img.shields.io/badge/HTML-red?style=for-the-badge&logo=html-5&logoColor=white)
   - ![CSS](https://img.shields.io/badge/CSS-blue?style=for-the-badge&logo=css-3&logoColor=white)
   - ![JS](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=white)
-  - ![Vercel](https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel&logoColor=white)
+  <!-- ![Vercel](https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel&logoColor=white)-->
 
-## Como Acessar
+<!-- ## Como Acessar
 
 Explore o AniLibrary e descubra uma coleção incrível de animes!
 
 👉 **[Clique aqui para acessar o AniLibrary](https://ani-library.vercel.app/)**
+-->
 
 ## Estrutura do Projeto
 
@@ -100,4 +101,4 @@ Desenvolvido por Andesson Reis.
 <div style="display: flex; align-items: center;">
   <img src="https://github.com/Andessonreis.png" alt="Andesson Reis" width="70" height="70" style="border-radius: 50%; margin-right: 10px;">
 </div>
----
+
