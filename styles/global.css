@@ -8,9 +8,6 @@
 
   /*** Light theme ***/
 
-  /* Cores Neon */
-  --neon-hover: #66D9FF;
-
   /* Cores de Fundo */
   --background-light: #F0F8FF;
 
@@ -21,35 +18,31 @@
   --grey: #AAAAAA;
 
   /*navbar*/
-  --main-color: #1e1e83;
+  --background-color-nav: #1e1e83;
   --shadow-color: rgba(0, 0, 0, 0.2);
-  --menu-width: 40%;
 
   /* Outras Cores */
   --light-warning: #fff2c6;
   --light-danger: #fecdd3;
   --light-success: #BBF7D0;
 
-
   /*** Dark theme ***/
 
-  /* Cores Neon */
-  --neon-pink: #ff00ff;
-  --neon-blue: #00ffff;
-  --neon-green: #00ff00;
-
   /* Cores de Fundo */
-  --dark-bg: #1a1a1a;
+  --background-dark: #1A1A1A;
 
   /* Cores de Texto */
-  --text-dark: #333333;
+  --dark-neon-blue: #00BFFF;
+  --text-dark: #FFFFFF;
+  --grey-dark: #888888;
 
-  /* Outras Cores */
-  --main-color: #242424;
+  /* Elementos Neons */
 
-  /* Cor principal para o tema Dark */
-  --shadow-color: rgba(0, 0, 0, 0.3);
-  --light-primary-deep-purple: #9c27b0;
+  --neon-pink: #FF6EC7;
+
+  /* Navbar */
+  --background-color-dark: #0D0D4F;
+  --shadow-color-dark: rgba(0, 0, 0, 0.2);
 }
 
 /* Configurações gerais continuadas */
@@ -62,7 +55,7 @@
 }
 
 /* Estilo para o corpo da página default */
-body {
+body.light-theme  {
   background: var(--background-light);
   background-size: cover;
   background-position: center;
@@ -75,7 +68,7 @@ body {
 
 /* Estilo para o corpo da página dark on */
 body.dark-theme {
-  background: var(--dark-bg);
+  background: var(--background-dark);
 
 }
 

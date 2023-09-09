@@ -1,12 +1,13 @@
 /* Header */
-.container-header{
+.container-header {
     width: 100%;
     background-color: #ddd;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.164);
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 100;
 }
+
 /* End of header */
 
 
@@ -39,6 +40,10 @@ a {
     letter-spacing: -1px;
 }
 
+.dark-theme .logo {
+    color: var(--dark-neon-blue)
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -52,6 +57,10 @@ a {
 .nav-link:hover {
     color: var(--light-primary-deep-purple);
     transition: color 0.2s ease;
+}
+
+.dark-theme .nav-link:hover {
+    color: var(--dark-neon-blue);
 }
 
 .hamburguer {
@@ -74,11 +83,14 @@ a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: var(--light-primary-deep-purple);
     border-radius: 50%;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+}
+
+.dark-theme .theme-toggle {
+    color: var(--dark-neon-blue);
 }
 
 /* banner */
@@ -92,7 +104,7 @@ a {
     display: none;
     margin: auto;
     z-index: 0;
-    margin-top:100px;
+    margin-top: 100px;
 }
 
 .banner.active {
@@ -155,13 +167,17 @@ a {
     animation: slide 2s ease-in-out;
 }
 
-.intro-title.dark-theme {
-    color: var(--neon-blue);
+.dark-theme .intro-title {
+    color: var(--dark-neon-blue)
 }
 
 .intro-description {
     font-size: 18px;
     color: #444;
+}
+
+.dark-theme .intro-description {
+    color: var(--text-dark)
 }
 
 /*End of introdução*/
@@ -179,11 +195,14 @@ a {
     color: var(--light-primary-deep-purple)
 }
 
+.dark-theme .view-all-link:hover {
+    color: var(--dark-neon-blue)
+}
+
 /* End of View all */
 
 /* Definindo base para seções de anime */
 .section-header {
-    /* titulo e view all */
     margin: 0 20px;
     display: flex;
     align-items: center;
@@ -203,6 +222,10 @@ a {
     /*add segunda box-shadow*/
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+
+.dark-theme .anime-section {
+    color: var(--dark-neon-blue);
 }
 
 .anime-item {
@@ -238,9 +261,17 @@ a {
     color: var(--light-primary-deep-purple);
 }
 
+.dark-theme .anime-item h3 {
+    color: var(--dark-neon-blue);
+}
+
 .anime-item p {
     font-size: 14px;
     color: var(--grey);
+}
+
+.dark-theme p {
+    color: var(--text-dark);
 }
 
 /* End of base */
@@ -311,6 +342,11 @@ footer {
     text-align: center;
 }
 
+.dark-theme footer {
+    color: var(--text-dark);
+}
+
+
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -342,6 +378,10 @@ footer {
 
 .social-icons a:hover {
     color: var(--light-primary-deep-purple);
+}
+
+.dark-theme .social-icons a, a:hover {
+    color: var(--dark-neon-blue);
 }
 
 /*End of rodape */
