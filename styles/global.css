@@ -21,11 +21,6 @@
   --background-color-nav: #1e1e83;
   --shadow-color: rgba(0, 0, 0, 0.2);
 
-  /* Outras Cores */
-  --light-warning: #fff2c6;
-  --light-danger: #fecdd3;
-  --light-success: #BBF7D0;
-
   /*** Dark theme ***/
 
   /* Cores de Fundo */
@@ -56,6 +51,7 @@
 
 /* Estilo para o corpo da página default */
 body.light-theme  {
+ 
   background: var(--background-light);
   background-size: cover;
   background-position: center;
