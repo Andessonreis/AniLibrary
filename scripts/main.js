@@ -1,3 +1,21 @@
+//Dynamic Navigation Highlight
+
+document.addEventListener('DOMContentLoaded', function() {
+    var currentPage = window.location.pathname.split('/').pop();
+    console.log('Página Atual:', currentPage);
+
+    var navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(function(link) {
+        link.classList.remove('active');
+    });
+
+    var activeLink = document.querySelector('a[href="' + currentPage + '"]');
+    if (activeLink) {
+        activeLink.classList.add('active');
+    }
+});
+
+
 // recursivide
 const hamburguer = document.querySelector(".hamburguer");
 const navMenu = document.querySelector(".nav-menu");
@@ -99,4 +117,3 @@ displayAnimeCatalog(animeCatalog, animenextreleaselist, 4);
 // Get the description from the database or server-side script.
 //const description = "Prepare-se para uma experiência cinematográfica com os melhores animes em destaque"
 //const description = "Prepare-se para uma experiência cinematográfica com os melhores animes em destaque. Entre na ação como nunca antes.";"
-

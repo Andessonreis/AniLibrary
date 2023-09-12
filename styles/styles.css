@@ -59,6 +59,11 @@ a {
     transition: color 0.2s ease;
 }
 
+.nav-link.active {
+    color: var(--light-primary-deep-purple);
+}
+
+
 .dark-theme .nav-link:hover {
     color: var(--dark-neon-blue);
 }
