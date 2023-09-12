@@ -78,6 +78,8 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
+/* End of navbar */
+
 /* Estilos para o botão de mudança de tema */
 .theme-toggle {
     position: fixed;
