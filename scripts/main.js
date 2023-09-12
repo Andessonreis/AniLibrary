@@ -1,3 +1,21 @@
+//Dynamic Navigation Highlight
+
+document.addEventListener('DOMContentLoaded', function() {
+    var currentPage = window.location.pathname.split('/').pop();
+    console.log('Página Atual:', currentPage);
+
+    var navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(function(link) {
+        link.classList.remove('active');
+    });
+
+    var activeLink = document.querySelector('a[href="' + currentPage + '"]');
+    if (activeLink) {
+        activeLink.classList.add('active');
+    }
+});
+
+
 // recursivide
 const hamburguer = document.querySelector(".hamburguer");
 const navMenu = document.querySelector(".nav-menu");
@@ -13,21 +31,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const body = document.body;
     const icon = themeToggle.querySelector("i");
 
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+        if (savedTheme === "dark-theme") {
+            icon.classList.remove("bi-sun");
+            icon.classList.add("bi-moon");
+        }
+    }
+
     themeToggle.addEventListener("click", function () {
         if (body.classList.contains("dark-theme")) {
             body.classList.remove("dark-theme");
             body.classList.add("light-theme");
             icon.classList.remove("bi-moon");
             icon.classList.add("bi-sun");
+            localStorage.setItem("theme", "light-theme"); 
         } else {
             body.classList.remove("light-theme");
             body.classList.add("dark-theme");
             icon.classList.remove("bi-sun");
             icon.classList.add("bi-moon");
+            localStorage.setItem("theme", "dark-theme"); 
         }
     });
 });
-
 
 // banner
 document.addEventListener("DOMContentLoaded", function () {
@@ -99,4 +127,3 @@ displayAnimeCatalog(animeCatalog, animenextreleaselist, 4);
 // Get the description from the database or server-side script.
 //const description = "Prepare-se para uma experiência cinematográfica com os melhores animes em destaque"
 //const description = "Prepare-se para uma experiência cinematográfica com os melhores animes em destaque. Entre na ação como nunca antes.";"
-

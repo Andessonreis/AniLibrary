@@ -1,12 +1,17 @@
 /* Header */
-.container-header{
+.container-header {
     width: 100%;
     background-color: #ddd;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.164);
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 100;
 }
+
+.dark-theme .container-header {
+    background-color: var(--neon-cyan);
+}
+
 /* End of header */
 
 
@@ -54,6 +59,15 @@ a {
     transition: color 0.2s ease;
 }
 
+.nav-link.active {
+    color: var(--light-primary-deep-purple);
+}
+
+
+.dark-theme .nav-link:hover {
+    color: var(--dark-neon-blue);
+}
+
 .hamburguer {
     display: none;
     cursor: pointer;
@@ -69,12 +83,13 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
+/* End of navbar */
+
 /* Estilos para o botão de mudança de tema */
 .theme-toggle {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: var(--light-primary-deep-purple);
     border-radius: 50%;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -92,7 +107,7 @@ a {
     display: none;
     margin: auto;
     z-index: 0;
-    margin-top:100px;
+    margin-top: 100px;
 }
 
 .banner.active {
@@ -106,7 +121,7 @@ a {
     left: 2px;
     width: 100%;
     height: 8px;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6);
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .banner-image {
@@ -155,13 +170,17 @@ a {
     animation: slide 2s ease-in-out;
 }
 
-.intro-title.dark-theme {
-    color: var(--neon-blue);
+.dark-theme .intro-title {
+    color: var(--dark-neon-blue)
 }
 
 .intro-description {
     font-size: 18px;
     color: #444;
+}
+
+.dark-theme .intro-description {
+    color: var(--text-dark)
 }
 
 /*End of introdução*/
@@ -179,11 +198,14 @@ a {
     color: var(--light-primary-deep-purple)
 }
 
+.dark-theme .view-all-link:hover {
+    color: var(--dark-neon-blue)
+}
+
 /* End of View all */
 
 /* Definindo base para seções de anime */
 .section-header {
-    /* titulo e view all */
     margin: 0 20px;
     display: flex;
     align-items: center;
@@ -205,6 +227,11 @@ a {
     border-radius: 5px;
 }
 
+.dark-theme .anime-section {
+    color: var(--dark-neon-blue);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
 .anime-item {
     background-color: var(--gray);
     width: 100%;
@@ -216,6 +243,11 @@ a {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     flex: 0 0 calc(25% - 20px);
     /*add apenas 4 animes por vez*/
+}
+
+.dark-theme .anime-item {
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);*/
+    box-shadow: 0px 4px 8px rgba(5, 255, 255, 0.5);
 }
 
 .anime-item:hover {
@@ -238,9 +270,17 @@ a {
     color: var(--light-primary-deep-purple);
 }
 
+.dark-theme .anime-item h3 {
+    color: var(--dark-neon-blue);
+}
+
 .anime-item p {
     font-size: 14px;
     color: var(--grey);
+}
+
+.dark-theme p {
+    color: var(--text-dark);
 }
 
 /* End of base */
@@ -311,6 +351,11 @@ footer {
     text-align: center;
 }
 
+.dark-theme footer {
+    color: var(--text-dark);
+}
+
+
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -342,6 +387,11 @@ footer {
 
 .social-icons a:hover {
     color: var(--light-primary-deep-purple);
+}
+
+.dark-theme .social-icons a,
+a:hover {
+    color: var(--dark-neon-blue);
 }
 
 /*End of rodape */

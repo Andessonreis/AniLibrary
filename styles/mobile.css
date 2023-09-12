@@ -24,14 +24,18 @@
         left: -100%;
         top: 70px;
         border-radius: 0 0 20px 20px;
-        background-color: var(--main-color);
+        background-color: var(--background-color-nav);
         text-align: center;
         flex-direction: column;
         transition: left 0.3s;
         z-index: 100;
         box-shadow: 0px 2px 8px var(--shadow-color);
         padding: 10px 0;
-        width: var(--menu-width);
+        width: 40%;
+    }
+
+    .dark-theme .nav-menu {
+        color: var(--background-color-dark);
     }
 
     .nav-item {
