@@ -89,10 +89,6 @@ a {
     cursor: pointer;
 }
 
-.dark-theme .theme-toggle {
-    color: var(--dark-neon-blue);
-}
-
 /* banner */
 .banner {
     width: 100%;
