@@ -31,21 +31,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const body = document.body;
     const icon = themeToggle.querySelector("i");
 
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+        if (savedTheme === "dark-theme") {
+            icon.classList.remove("bi-sun");
+            icon.classList.add("bi-moon");
+        }
+    }
+
     themeToggle.addEventListener("click", function () {
         if (body.classList.contains("dark-theme")) {
             body.classList.remove("dark-theme");
             body.classList.add("light-theme");
             icon.classList.remove("bi-moon");
             icon.classList.add("bi-sun");
+            localStorage.setItem("theme", "light-theme"); 
         } else {
             body.classList.remove("light-theme");
             body.classList.add("dark-theme");
             icon.classList.remove("bi-sun");
             icon.classList.add("bi-moon");
+            localStorage.setItem("theme", "dark-theme"); 
         }
     });
 });
-
 
 // banner
 document.addEventListener("DOMContentLoaded", function () {
