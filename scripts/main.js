@@ -122,6 +122,42 @@ displayAnimeCatalog(animeCatalog, animereleaseslist, 4);
 displayAnimeCatalog(animeCatalog, animepopularlist, 4);
 displayAnimeCatalog(animeCatalog, animenextreleaselist, 4);
 
+//mangas
+
+class Manga {
+    constructor(title, genre) {
+        this.title = title;
+        this.genre = genre;
+    }
+
+    generateHTML() {
+        return `
+            <div class="manga-item">
+                <img src="images/catalog/jujutsu.jpg" alt="Manga Image">
+                <h3>${this.title}</h3>
+                <p>Gênero: ${this.genre}</p>
+            </div>
+        `;
+    }
+}
+
+const mangaCatalog = [
+    new Manga("Jujutsu Kaisen", "Ação, Sobrenatural, Shounen")
+];
+
+function displayMangaCatalog(mangaList, container, itemCount) {
+    let catalogHTML = '';
+    for (let i = 0; i < itemCount; i++) {
+        catalogHTML += mangaList[i].generateHTML();
+    }
+    container.innerHTML = catalogHTML;
+}
+
+// Agora, exiba a lista de mangas usando a função apropriada
+displayMangaCatalog(mangaCatalog, mangaEmphasisList, 4);
+displayMangaCatalog(mangaCatalog, mangareleaseslist, 4);
+displayMangaCatalog(mangaCatalog, mangapopularlist, 4);
+displayMangaCatalog(mangaCatalog, manganextreleaselist, 4);
 
 
 // Get the description from the database or server-side script.

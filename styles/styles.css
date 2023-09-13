@@ -300,15 +300,16 @@ a {
 
 /*End of destaques*/
 
-/* Descrição das section */
-.section-description {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
+.manga-emphasis-list {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    /* flex-wrap: wrap;*/
+    /* Permite que os itens quebrem a linha em telas menores */
+    flex-wrap: nowrap;
+    /*impede que os anims quebre a linha*/
 }
-
-/* End of descrição*/
 
 /* Novos lançamentos */
 .anime-releases-list {
@@ -321,6 +322,14 @@ a {
 
 /* End of novos lançamenos */
 
+.manga-releases-list {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
 /* Animes populares */
 .anime-popular-list {
     display: flex;
@@ -332,6 +341,14 @@ a {
 
 /* end of Animes populares */
 
+.manga-popular-list {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
 /* Animes que serão lançados*/
 .anime-next-release-list {
     display: flex;
@@ -340,8 +357,25 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
-
 /* End of lançados*/
+
+.manga-next-release-list {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Descrição das section */
+.section-description {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* End of descrição*/
 
 /* Rodapé */
 footer {
