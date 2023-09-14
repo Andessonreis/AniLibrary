@@ -22,7 +22,6 @@ Explore o AniLibrary e descubra uma coleção incrível de animes!
 
 👉 **[Clique aqui para acessar o AniLibrary](https://ani-library.vercel.app/)**
 
-
 ## Estrutura do Projeto
 
 O projeto AniLibrary é organizado da seguinte forma:
