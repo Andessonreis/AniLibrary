@@ -11,9 +11,7 @@
 .dark-theme .container-header {
     background-color: var(--neon-cyan);
 }
-
 /* End of header */
-
 
 /* Estilo para a barra de navegação (navbar) */
 li {
@@ -203,7 +201,7 @@ a {
 
 /* End of View all */
 
-/* Definindo base para seções de anime */
+/* Definindo bases para seções de anime */
 .section-header {
     margin: 0 20px;
     display: flex;
@@ -214,7 +212,6 @@ a {
 
 .media-section {
     overflow-x: auto;
-    /*add uma barra +animes de rolagem teste*/
     margin-bottom: 10px;
     background-color: var(--white);
     color: var(--light-primary-deep-purple);
@@ -235,14 +232,12 @@ a {
     background-color: var(--gray);
     width: 100%;
     border-radius: 5px;
-    border: 1px solid #ff0000;
     padding: 15px;
     text-align: center;
     transition: background-color 0.3s ease;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     flex: 0 0 calc(25% - 20px);
-    /*add apenas 4 animes por vez*/
 }
 
 .dark-theme .anime-item {
@@ -282,11 +277,9 @@ a {
 .dark-theme p {
     color: var(--text-dark);
 }
-
 /* End of base */
 
 /* Animes em destaques */
-/* Usando para exibir os animes ps:mudar a logica*/
 .anime-emphasis-list {
     display: flex;
     justify-content: center;
@@ -305,10 +298,7 @@ a {
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    /* flex-wrap: wrap;*/
-    /* Permite que os itens quebrem a linha em telas menores */
     flex-wrap: nowrap;
-    /*impede que os anims quebre a linha*/
 }
 
 /* Novos lançamentos */
