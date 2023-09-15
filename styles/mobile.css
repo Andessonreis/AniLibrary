@@ -65,6 +65,87 @@
 
     /* End of Introdução */
 
+    .media-section 
+    .section-header,
+    .section-description {
+        border: 1px solid green;
+       
+    }
+
+    .container-list {
+        border: 1px solid red;
+        max-height: calc(100vh - 150px); 
+        overflow-y: auto; 
+ 
+    }
+
+    /* Seção de animes   flex: 0 0 calc(25% - 20px);*/
+
+    .section-header {
+        margin: 0 10px 10px;
+    }
+
+    /*
+    .media-section {
+        overflow-x: auto;
+        margin-bottom: 10px;
+        color: var(--light-primary-deep-purple);
+        padding: 20px 0;
+        position: relative;
+    }
+    */
+
+    /* Descrição das section */
+    .section-description {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /*
+
+
+    
+    .media-section .anime-item{
+        background-color: var(--gray);
+        width: 100%;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        flex: 0 0 calc(25% - 20px);
+    }
+    
+    .anime-item:hover {
+        background-color: var(--gray);
+        filter: brightness(0.9);
+        transition: filter 0.3s ease;
+    }
+    
+    .anime-item img {
+        width: 90%;
+        max-height: 75%;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .anime-item h3 {
+        font-size: 18px;
+        margin: 10px 0;
+        color: var(--light-primary-deep-purple);
+    }
+    
+    .anime-item p {
+        font-size: 14px;
+        color: var(--grey);
+    }
+    
+  */
 }
 
 /* Banner responsivo */
