@@ -1,5 +1,5 @@
 /* Responsividade mobile */
-@media (max-width: 768px) {
+@media (max-width: 450px) {
 
     /* Hambúrguer */
     .hamburguer {
@@ -18,7 +18,7 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    /* Menu de navegação */
+    /* Menu de navegação (navbar) */
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -47,34 +47,87 @@
         left: 0;
     }
 
-    /* Seção de animes */
-    .anime-item {
-        flex: 0 0 calc(25% - 20px);
+    /*End of responsividade navbar*/
+
+    /*Introdução*/
+
+    .intro {
+        padding: 30px;
     }
+
+    .intro-title {
+        font-size: 19px;
+    }
+
+    .intro-description {
+        font-size: 13px;
+    }
+
+    /* End of Introdução */
+
+    /* Seção de animes */
+    .section-header {
+        margin: 0 10px 10px;
+        font-size: 10px;
+    }
+
+    .container-list {
+        max-height: calc(100vh - 150px);
+        overflow-y: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .media-section .anime-item {
+        width: calc(50% - 10px); 
+        padding: 0;
+    }
+
+    .anime-item img {
+        width: 64px;
+    }
+
+    .anime-item h3 {
+        font-size: 8px;
+        margin-top: 0;
+    }
+
+    /* Descrição das section */
+    .section-description {
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 0;
+    
+    }
+
+    .view-all-link {
+        display: flex;
+        border: 1px solid rebeccapurple;
+        font-size: 11px;
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+
 }
 
 /* Banner responsivo */
 @media screen and (max-width: 991px) {
     .banner {
-        max-height: 60vh;
-        height: auto;
+        height: 140px;
+        flex-wrap: wrap;
     }
 
     .banner::after {
         display: none;
     }
 
-    .banner-image {
-        height: 100%;
-        padding: 10px;
-    }
-
     .banner img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
+        width: 90%;
         display: block;
         margin: 0 auto;
+        margin-top: 0;
+        height: 100%;
     }
 
     .banner:hover {
@@ -82,4 +135,5 @@
     }
 
 }
+
 /* End of banner */
