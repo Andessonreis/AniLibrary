@@ -65,10 +65,6 @@
 
     /* End of Introdução */
 
-    /* Seção de animes */
-    .anime-item {
-        flex: 0 0 calc(25% - 20px);
-    }
 }
 
 /* Banner responsivo */
