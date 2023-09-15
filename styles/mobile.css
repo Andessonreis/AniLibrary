@@ -1,5 +1,5 @@
 /* Responsividade mobile */
-@media (max-width: 768px) {
+@media (max-width: 450px) {
 
     /* Hambúrguer */
     .hamburguer {
@@ -56,30 +56,26 @@
 /* Banner responsivo */
 @media screen and (max-width: 991px) {
     .banner {
-        max-height: 60vh;
-        height: auto;
+        height: 140px;
+        flex-wrap: wrap;
     }
 
     .banner::after {
         display: none;
     }
 
-    .banner-image {
-        height: 100%;
-        padding: 10px;
-    }
-
     .banner img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
+        width: 90%;
         display: block;
         margin: 0 auto;
+        margin-top: 0;
+        height: 100%;
     }
-
+    
     .banner:hover {
         filter: none;
     }
 
 }
+
 /* End of banner */
