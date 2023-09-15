@@ -18,7 +18,7 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    /* Menu de navegação */
+    /* Menu de navegação (navbar) */
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -47,6 +47,24 @@
         left: 0;
     }
 
+    /*End of responsividade navbar*/
+
+    /*Introdução*/
+
+    .intro {
+        padding: 30px;
+    }
+
+    .intro-title {
+        font-size: 19px;
+    }
+
+    .intro-description {
+        font-size: 13px;
+    }
+
+    /* End of Introdução */
+
     /* Seção de animes */
     .anime-item {
         flex: 0 0 calc(25% - 20px);
@@ -71,7 +89,7 @@
         margin-top: 0;
         height: 100%;
     }
-    
+
     .banner:hover {
         filter: none;
     }
