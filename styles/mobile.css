@@ -1,6 +1,5 @@
 /* Responsividade mobile */
 @media (max-width: 450px) {
-
     /* Hambúrguer */
     .hamburguer {
         display: block;
@@ -46,11 +45,9 @@
     .nav-menu.active {
         left: 0;
     }
-
     /*End of responsividade navbar*/
 
     /*Introdução*/
-
     .intro {
         padding: 30px;
     }
@@ -62,7 +59,6 @@
     .intro-description {
         font-size: 13px;
     }
-
     /* End of Introdução */
 
     /* Seção de animes */
@@ -100,7 +96,6 @@
         margin-top: 0;
     
     }
-
     .view-all-link {
         display: flex;
         border: 1px solid rebeccapurple;
@@ -108,7 +103,6 @@
         margin-top: 8px;
         margin-bottom: 0;
     }
-
 }
 
 /* Banner responsivo */
@@ -133,7 +127,5 @@
     .banner:hover {
         filter: none;
     }
-
 }
-
 /* End of banner */
