@@ -65,7 +65,6 @@ O AniLibrary possui dois temas: claro e escuro. As cores utilizadas nos temas po
   - Cor de Aviso Clara: `--light-warning`
   - Cor de Alerta Clara: `--light-danger`
   - Cor de Sucesso Clara: `--light-success`
-
 ### Tema Escuro:
 
 - **Cores Neon**:
