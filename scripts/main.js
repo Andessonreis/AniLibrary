@@ -1,11 +1,11 @@
 //Dynamic Navigation Highlight
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var currentPage = window.location.pathname.split('/').pop();
     console.log('Página Atual:', currentPage);
 
     var navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(function(link) {
+    navLinks.forEach(function (link) {
         link.classList.remove('active');
     });
 
@@ -46,13 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
             body.classList.add("light-theme");
             icon.classList.remove("bi-moon");
             icon.classList.add("bi-sun");
-            localStorage.setItem("theme", "light-theme"); 
+            localStorage.setItem("theme", "light-theme");
         } else {
             body.classList.remove("light-theme");
             body.classList.add("dark-theme");
             icon.classList.remove("bi-sun");
             icon.classList.add("bi-moon");
-            localStorage.setItem("theme", "dark-theme"); 
+            localStorage.setItem("theme", "dark-theme");
         }
     });
 });
@@ -91,7 +91,7 @@ class Anime {
     generateHTML() {
         return `
             <div class="anime-item">
-                <img src="images/catalog/Hell's_Paradise-_Jigokuraku,_Vol._5_by_Yuji_Kaku.jpg" alt="Anime Image">
+                <img src="images/catalog/jujutsu.jpg" alt="Manga Image">
                 <h3>${this.title}</h3>
             </div>
         `;
@@ -99,8 +99,7 @@ class Anime {
 }
 
 const animeCatalog = [
-    new Anime("Hell's Paradise", "Ação, Sobrenatural, Seinen")
-
+    new Anime("Jujutsu Kaisen", "Ação, Sobrenatural, Shounen")
 ];
 
 const animeEmphasisList = document.querySelector('.anime-emphasis-list');
@@ -132,7 +131,7 @@ class Manga {
     generateHTML() {
         return `
             <div class="manga-item">
-                <img src="images/catalog/jujutsu.jpg" alt="Manga Image">
+            <img src="images/catalog/Hell's_Paradise-_Jigokuraku,_Vol._5_by_Yuji_Kaku.jpg" alt="Anime Image">
                 <h3>${this.title}</h3>
                 <p>Gênero: ${this.genre}</p>
             </div>
@@ -141,7 +140,7 @@ class Manga {
 }
 
 const mangaCatalog = [
-    new Manga("Jujutsu Kaisen", "Ação, Sobrenatural, Shounen")
+    new Manga("Hell's Paradise", "Ação, Sobrenatural, Seinen")
 ];
 
 function displayMangaCatalog(mangaList, container, itemCount) {
