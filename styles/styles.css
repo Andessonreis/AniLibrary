@@ -11,6 +11,7 @@
 .dark-theme .container-header {
     background-color: var(--neon-cyan);
 }
+
 /* End of header */
 
 /* Estilo para a barra de navegação (navbar) */
@@ -79,6 +80,7 @@ a {
     background-color: var(--light-primary-deep-purple);
     transition: all 0.3s ease-in-out;
 }
+
 /* End of navbar */
 
 /* Botão para mudança de tema */
@@ -91,6 +93,7 @@ a {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
+
 /*End of toggle*/
 
 /* banner */
@@ -118,7 +121,7 @@ a {
     left: 2px;
     width: 100%;
     height: 8px;
-   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .banner-image {
@@ -139,6 +142,7 @@ a {
     filter: brightness(0.8);
     transition: filter 0.3s ease;
 }
+
 /* End of banner */
 
 /* Introdução */
@@ -178,6 +182,7 @@ a {
 .dark-theme .intro-description {
     color: var(--text-dark)
 }
+
 /* End of introdução */
 
 /*  "View All" link */
@@ -196,6 +201,7 @@ a {
 .dark-theme .view-all-link:hover {
     color: var(--dark-neon-blue)
 }
+
 /* End of View all */
 
 /* Seções de animes */
@@ -206,7 +212,8 @@ a {
     color: var(--light-primary-deep-purple);
     padding: 20px 0;
     position: relative;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);   /* add segunda box-shadow */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* add segunda box-shadow */
     border-radius: 5px;
 }
 
@@ -259,7 +266,8 @@ a {
     border-radius: 5px;
 }
 
-.anime-item h3 { /*Titulo do anime*/
+.anime-item h3 {
+    /*Titulo do anime*/
     border: 1px solid rebeccapurple;
     font-size: 18px;
     margin-bottom: 2px;
@@ -270,7 +278,8 @@ a {
     color: var(--dark-neon-blue);
 }
 
-.anime-item p { /*Descrição*/
+.anime-item p {
+    /*Descrição*/
     font-size: 14px;
     color: var(--grey);
 }
@@ -278,48 +287,37 @@ a {
 .dark-theme p {
     color: var(--text-dark);
 }
+
 /* End of base */
 
 /**** Seção list Animes ****/
 
-/* Animes em destaques */
-.anime-emphasis-list {
+.anime-list {
     display: flex;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     flex-wrap: nowrap;
 }
+
+/* Animes em destaques */
+#anime-emphasis-list {}
+
 /*End of destaques*/
 
 /* Novos lançamentos animes */
-.anime-releases-list {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
+#anime-releases-list {}
+
 /* End of novos lançamenos */
 
 /* Animes populares */
-.anime-popular-list {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
+#anime-popular-list {}
+
 /* end of Animes populares */
 
 /* Animes que serão lançados*/
-.anime-next-release-list {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
+#anime-next-release-list {}
+
 /* End of lançados*/
 
 /*** End of list Animes ***/
@@ -334,6 +332,7 @@ a {
     gap: 20px;
     flex-wrap: nowrap;
 }
+
 /*End of destaques*/
 
 /* Novos lançamentos mangas */
@@ -344,6 +343,7 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
+
 /* End of novos lançamenos */
 
 /* Mangas populares */
@@ -354,6 +354,7 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
+
 /* end of mangas populares */
 
 /* Mangas que serão lançados*/
@@ -364,6 +365,7 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
+
 /* End of lançados */
 
 /*** End of list Mangas ***/
@@ -375,6 +377,7 @@ a {
     font-size: 18px;
     font-weight: bold;
 }
+
 /* End of descrição*/
 
 /* Rodapé */
@@ -426,4 +429,5 @@ footer {
 a:hover {
     color: var(--dark-neon-blue);
 }
+
 /*End of rodape */

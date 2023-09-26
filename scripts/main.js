@@ -102,10 +102,10 @@ const animeCatalog = [
     new Anime("Jujutsu Kaisen", "Ação, Sobrenatural, Shounen")
 ];
 
-const animeEmphasisList = document.querySelector('.anime-emphasis-list');
-const animereleaseslist = document.querySelector('.anime-releases-list');
-const animepopularlist = document.querySelector('.anime-popular-list');
-const animenextreleaselist = document.querySelector('.anime-next-release-list');
+const animeEmphasisList = document.querySelector('#anime-emphasis-list');
+const animereleaseslist = document.querySelector('#anime-releases-list');
+const animepopularlist = document.querySelector('#anime-popular-list');
+const animenextreleaselist = document.querySelector('#anime-next-release-list');
 
 function displayAnimeCatalog(animeList, container, itemCount) {
     let catalogHTML = '';
