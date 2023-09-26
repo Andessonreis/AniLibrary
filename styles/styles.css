@@ -324,8 +324,7 @@ a {
 
 /******* Seção list Mangás *******/
 
-/* manga em destaques */
-.manga-emphasis-list {
+.manga-list {
     display: flex;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -333,38 +332,23 @@ a {
     flex-wrap: nowrap;
 }
 
+/* manga em destaques */
+#manga-emphasis-list {}
+
 /*End of destaques*/
 
 /* Novos lançamentos mangas */
-.manga-releases-list {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
+#manga-releases-list {}
 
 /* End of novos lançamenos */
 
 /* Mangas populares */
-.manga-popular-list {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
+#manga-popular-list {}
 
 /* end of mangas populares */
 
 /* Mangas que serão lançados*/
-.manga-next-release-list {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
+#manga-next-release-list {}
 
 /* End of lançados */
 
