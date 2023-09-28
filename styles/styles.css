@@ -244,13 +244,13 @@ a {
     padding: 0;
     text-align: center;
     cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
     flex: 0 0 calc(25% - 20px);
 }
 
 .dark-theme .anime-item {
     /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);*/
-    box-shadow: 0px 4px 8px rgba(5, 255, 255, 0.5);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .anime-item:hover {
@@ -262,7 +262,6 @@ a {
 .anime-item img {
     width: 80%;
     padding: 0;
-    border: 1px solid red;
     object-fit: cover;
     border-radius: 5px;
 }
