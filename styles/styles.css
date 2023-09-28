@@ -260,15 +260,15 @@ a {
 }
 
 .anime-item img {
-    width: 100%;
-    max-height: 75%;
+    width: 80%;
+    padding: 0;
+    border: 1px solid red;
     object-fit: cover;
     border-radius: 5px;
 }
 
 .anime-item h3 {
     /*Titulo do anime*/
-    border: 1px solid rebeccapurple;
     font-size: 18px;
     margin-bottom: 2px;
     color: var(--light-primary-deep-purple);
