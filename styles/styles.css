@@ -269,7 +269,7 @@ a {
 
 .anime-item h3 {
     /*Titulo do anime*/
-    font-size: 18px;
+    font-size: 11px;
     margin-bottom: 2px;
     color: var(--light-primary-deep-purple);
 }
